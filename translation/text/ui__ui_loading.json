@@ -1,0 +1,23 @@
+[
+ {
+  "id": "0000.0",
+  "event": "LOADING_01",
+  "font": 2,
+  "ja": "NOW LOADING",
+  "ko": ""
+ },
+ {
+  "id": "0001.0",
+  "event": "SAVING_01",
+  "font": 2,
+  "ja": "NOW SAVING",
+  "ko": ""
+ },
+ {
+  "id": "0002.0",
+  "event": "CONNECT_01",
+  "font": 2,
+  "ja": "CONNECTING",
+  "ko": ""
+ }
+]

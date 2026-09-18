@@ -1,0 +1,1045 @@
+[
+ {
+  "id": "0000.0",
+  "event": "ENDING_BASE_01",
+  "font": 3,
+  "ja": "請求書",
+  "ko": "청구서"
+ },
+ {
+  "id": "0001.0",
+  "event": "ENDING_BASE_02",
+  "font": 1,
+  "ja": "コーネリア防衛軍 ペパー将軍殿",
+  "ko": "코네리아 방위군 페퍼 장군 귀하"
+ },
+ {
+  "id": "0002.0",
+  "event": "ENDING_BASE_03",
+  "font": 2,
+  "ja": "下記の金額を請求いたします。",
+  "ko": "아래 금액을 청구합니다."
+ },
+ {
+  "id": "0003.0",
+  "event": "ENDING_BASE_04",
+  "font": 1,
+  "ja": "アンドルフ軍兵器撃墜数:",
+  "ko": "안돌프군 병기 격추 수:"
+ },
+ {
+  "id": "0004.0",
+  "event": "ENDING_BASE_05",
+  "font": 1,
+  "ja": "請求金額(sp$):",
+  "ko": "청구 금액(sp$):"
+ },
+ {
+  "id": "0005.0",
+  "event": "ENDING_BASE_06",
+  "font": 2,
+  "ja": "やとわれ遊撃隊",
+  "ko": "용병 유격대"
+ },
+ {
+  "id": "0006.0",
+  "event": "ENDING_A01_TITLE_01",
+  "font": 12,
+  "ja": "SUPERVISING DIRECTOR",
+  "ko": ""
+ },
+ {
+  "id": "0007.0",
+  "event": "ENDING_A01_NAME_01",
+  "font": 13,
+  "ja": "SHIGERU MIYAMOTO",
+  "ko": ""
+ },
+ {
+  "id": "0008.0",
+  "event": "ENDING_A02_TITLE_01",
+  "font": 12,
+  "ja": "DIRECTORS",
+  "ko": ""
+ },
+ {
+  "id": "0009.0",
+  "event": "ENDING_A02_NAME_01",
+  "font": 13,
+  "ja": "YUGO HAYASHI\nYUSUKE HASHIMOTO",
+  "ko": ""
+ },
+ {
+  "id": "0010.0",
+  "event": "ENDING_A03_TITLE_01",
+  "font": 12,
+  "ja": "PRODUCERS",
+  "ko": ""
+ },
+ {
+  "id": "0011.0",
+  "event": "ENDING_A03_NAME_01",
+  "font": 13,
+  "ja": "SHIGERU MIYAMOTO\nTADASHI SUGIYAMA\nATSUSHI INABA",
+  "ko": ""
+ },
+ {
+  "id": "0012.0",
+  "event": "ENDING_A04_TITLE_01",
+  "font": 12,
+  "ja": "ASSISTANT PRODUCERS",
+  "ko": ""
+ },
+ {
+  "id": "0013.0",
+  "event": "ENDING_A04_NAME_01",
+  "font": 13,
+  "ja": "HIROSHI MATSUNAGA\nTAKANORI FUKUYAMA",
+  "ko": ""
+ },
+ {
+  "id": "0014.0",
+  "event": "ENDING_A05_TITLE_01",
+  "font": 12,
+  "ja": "PLANNING",
+  "ko": ""
+ },
+ {
+  "id": "0015.0",
+  "event": "ENDING_A05_NAME_01",
+  "font": 13,
+  "ja": "HIRONO SATO\nAKITERU NAKA\nRYOYA SAKABE\nKAZUHIDE KAWAMURA",
+  "ko": ""
+ },
+ {
+  "id": "0016.0",
+  "event": "ENDING_A06_TITLE_01",
+  "font": 12,
+  "ja": "SUPERVISORS",
+  "ko": ""
+ },
+ {
+  "id": "0017.0",
+  "event": "ENDING_A06_NAME_01",
+  "font": 13,
+  "ja": "TAKAYA IMAMURA\nKAZUAKI MORITA",
+  "ko": ""
+ },
+ {
+  "id": "0018.0",
+  "event": "ENDING_A07_TITLE_01",
+  "font": 12,
+  "ja": "CONCEPT ART",
+  "ko": ""
+ },
+ {
+  "id": "0019.0",
+  "event": "ENDING_A07_NAME_01",
+  "font": 13,
+  "ja": "YUSUKE KAN\nTATSUYA YOSHIKAWA\nTAKAYUKI YANASE\nKANETAKE EBIKAWA",
+  "ko": ""
+ },
+ {
+  "id": "0020.0",
+  "event": "ENDING_A08_TITLE_01",
+  "font": 12,
+  "ja": "CHARACTER MODELING",
+  "ko": ""
+ },
+ {
+  "id": "0021.0",
+  "event": "ENDING_A08_NAME_01",
+  "font": 13,
+  "ja": "KOJI ISHIDA\nKEIGO INOUE\nEIJI FUNAHASHI\nTADANARI TAKAHASHI\nHITO MATSUDAIRA\nKENJI IRIE",
+  "ko": ""
+ },
+ {
+  "id": "0022.0",
+  "event": "ENDING_A09_TITLE_01",
+  "font": 12,
+  "ja": "ENVIRONMENT ART",
+  "ko": ""
+ },
+ {
+  "id": "0023.0",
+  "event": "ENDING_A09_NAME_01",
+  "font": 13,
+  "ja": "TETSUYA KAWAI\nHIROKI ONISHI\nKANA YAMAMOTO\nJUNPEI MASHIBA",
+  "ko": ""
+ },
+ {
+  "id": "0024.0",
+  "event": "ENDING_A10_TITLE_01",
+  "font": 12,
+  "ja": "ANIMATION",
+  "ko": ""
+ },
+ {
+  "id": "0025.0",
+  "event": "ENDING_A10_NAME_01",
+  "font": 13,
+  "ja": "HIDETOSHI KAI",
+  "ko": ""
+ },
+ {
+  "id": "0026.0",
+  "event": "ENDING_A11_TITLE_01",
+  "font": 12,
+  "ja": "VFX ART",
+  "ko": ""
+ },
+ {
+  "id": "0027.0",
+  "event": "ENDING_A11_NAME_01",
+  "font": 13,
+  "ja": "KOJI TANAKA\nTAKAHIRO YASUDA\nTAKUO YAMAMOTO\nSHION NAKAJIMA",
+  "ko": ""
+ },
+ {
+  "id": "0028.0",
+  "event": "ENDING_A12_TITLE_01",
+  "font": 12,
+  "ja": "UI ART",
+  "ko": ""
+ },
+ {
+  "id": "0029.0",
+  "event": "ENDING_A12_NAME_01",
+  "font": 13,
+  "ja": "TOMOYUKI KONDO\nHISAYOSHI KIJIMA\nATSUMI OKAMOTO\nRUI ONISHI",
+  "ko": ""
+ },
+ {
+  "id": "0030.0",
+  "event": "ENDING_A13_TITLE_01",
+  "font": 12,
+  "ja": "LEAD PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0031.0",
+  "event": "ENDING_A13_NAME_01",
+  "font": 13,
+  "ja": "KENJI HIGASHIYAMA",
+  "ko": ""
+ },
+ {
+  "id": "0032.0",
+  "event": "ENDING_A14_TITLE_01",
+  "font": 12,
+  "ja": "PLAYER PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0033.0",
+  "event": "ENDING_A14_NAME_01",
+  "font": 13,
+  "ja": "HIROMICHI MIYAKE",
+  "ko": ""
+ },
+ {
+  "id": "0034.0",
+  "event": "ENDING_A15_TITLE_01",
+  "font": 12,
+  "ja": "CAMERA PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0035.0",
+  "event": "ENDING_A15_NAME_01",
+  "font": 13,
+  "ja": "RYU SHINOMIYA",
+  "ko": ""
+ },
+ {
+  "id": "0036.0",
+  "event": "ENDING_A16_TITLE_01",
+  "font": 12,
+  "ja": "OBJECT & ENEMY PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0037.0",
+  "event": "ENDING_A16_NAME_01",
+  "font": 13,
+  "ja": "TATSUYA SHINADA\nNAONARI FUKUMOTO\nRYO TAKEBAYASHI",
+  "ko": ""
+ },
+ {
+  "id": "0038.0",
+  "event": "ENDING_A17_TITLE_01",
+  "font": 12,
+  "ja": "NPC PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0039.0",
+  "event": "ENDING_A17_NAME_01",
+  "font": 13,
+  "ja": "YUKARI MORI",
+  "ko": ""
+ },
+ {
+  "id": "0040.0",
+  "event": "ENDING_A18_TITLE_01",
+  "font": 12,
+  "ja": "STAGE PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0041.0",
+  "event": "ENDING_A18_NAME_01",
+  "font": 13,
+  "ja": "YUKARI SUZUKI",
+  "ko": ""
+ },
+ {
+  "id": "0042.0",
+  "event": "ENDING_A19_TITLE_01",
+  "font": 12,
+  "ja": "UI PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0043.0",
+  "event": "ENDING_A19_NAME_01",
+  "font": 13,
+  "ja": "SHIGEKI YOSHIDA\nTAKASHI YOSHIMI",
+  "ko": ""
+ },
+ {
+  "id": "0044.0",
+  "event": "ENDING_A20_TITLE_01",
+  "font": 12,
+  "ja": "SYSTEM PROGRAMMING",
+  "ko": ""
+ },
+ {
+  "id": "0045.0",
+  "event": "ENDING_A20_NAME_01",
+  "font": 13,
+  "ja": "MAKOTO FUJIMI\nKAZUNORI MORITA\nYUJI HAGIYAMA",
+  "ko": ""
+ },
+ {
+  "id": "0046.0",
+  "event": "ENDING_A21_TITLE_01",
+  "font": 12,
+  "ja": "MUSIC",
+  "ko": ""
+ },
+ {
+  "id": "0047.0",
+  "event": "ENDING_A21_NAME_01",
+  "font": 13,
+  "ja": "HIROSHI YAMAGUCHI\nYUKARI SUITA",
+  "ko": ""
+ },
+ {
+  "id": "0048.0",
+  "event": "ENDING_A22_TITLE_01",
+  "font": 12,
+  "ja": "SOUND DESIGN",
+  "ko": ""
+ },
+ {
+  "id": "0049.0",
+  "event": "ENDING_A22_NAME_01",
+  "font": 13,
+  "ja": "MASATAKA JOGO\nYUJI HONDA\nYASUHIRO NAKA",
+  "ko": ""
+ },
+ {
+  "id": "0050.0",
+  "event": "ENDING_A23_TITLE_01",
+  "font": 12,
+  "ja": "CINEMATIC ART",
+  "ko": ""
+ },
+ {
+  "id": "0051.0",
+  "event": "ENDING_A23_NAME_01",
+  "font": 13,
+  "ja": "TOMOHIRO NAKANO",
+  "ko": ""
+ },
+ {
+  "id": "0052.0",
+  "event": "ENDING_A24_TXT_01",
+  "font": 11,
+  "ja": "This game is dedicated to our wingman who fell in battle.",
+  "ko": ""
+ },
+ {
+  "id": "0053.0",
+  "event": "ENDING_B_01_TITLE_01",
+  "font": 12,
+  "ja": "SOUND SUPERVISORS",
+  "ko": ""
+ },
+ {
+  "id": "0054.0",
+  "event": "ENDING_B_01_NAME_01",
+  "font": 13,
+  "ja": "KOJI KONDO\nHAJIME WAKAI",
+  "ko": ""
+ },
+ {
+  "id": "0055.0",
+  "event": "ENDING_B_01_TITLE_02",
+  "font": 12,
+  "ja": "SOUND SUPPORT",
+  "ko": ""
+ },
+ {
+  "id": "0056.0",
+  "event": "ENDING_B_01_NAME_02",
+  "font": 13,
+  "ja": "RYOJI YOSHITOMI\nTORU ASAKAWA\nMASATO MIZUTA",
+  "ko": ""
+ },
+ {
+  "id": "0057.0",
+  "event": "ENDING_B_02_TITLE_01",
+  "font": 12,
+  "ja": "VOICE RECORDING",
+  "ko": ""
+ },
+ {
+  "id": "0058.0",
+  "event": "ENDING_B_02_NAME_01",
+  "font": 13,
+  "ja": "YOHEI MIYAGAWA",
+  "ko": ""
+ },
+ {
+  "id": "0059.0",
+  "event": "ENDING_B_02_TITLE_02",
+  "font": 12,
+  "ja": "PLANNING",
+  "ko": ""
+ },
+ {
+  "id": "0060.0",
+  "event": "ENDING_B_02_NAME_02",
+  "font": 13,
+  "ja": "RYUHEI MATSUURA\nTOMOAKI YOSHINOBU",
+  "ko": ""
+ },
+ {
+  "id": "0061.0",
+  "event": "ENDING_B_02_TITLE_03",
+  "font": 12,
+  "ja": "TECHNICAL SUPPORT",
+  "ko": ""
+ },
+ {
+  "id": "0062.0",
+  "event": "ENDING_B_02_NAME_03",
+  "font": 13,
+  "ja": "TAKEHIRO OYAMA\nSHOTARO IWANAGA",
+  "ko": ""
+ },
+ {
+  "id": "0063.0",
+  "event": "ENDING_B_03_TITLE_01",
+  "font": 12,
+  "ja": "PROGRAMMING SUPPORT",
+  "ko": ""
+ },
+ {
+  "id": "0064.0",
+  "event": "ENDING_B_03_NAME_01",
+  "font": 13,
+  "ja": "KATSUHITO NISHIMURA\nYOJI INAGAKI\nTOSHIO IWAWAKI\nYUJI SAWATANI\nKENZO HAYAKAWA\nKUNIHIRO KOMATSU",
+  "ko": ""
+ },
+ {
+  "id": "0065.0",
+  "event": "ENDING_B_04_TITLE_01",
+  "font": 12,
+  "ja": "TOOLS SUPPORT",
+  "ko": ""
+ },
+ {
+  "id": "0066.0",
+  "event": "ENDING_B_04_NAME_01",
+  "font": 13,
+  "ja": "RYOTA MARUKO\nHISASHI SEKOGUCHI\nHITOSHI KANETANI",
+  "ko": ""
+ },
+ {
+  "id": "0067.0",
+  "event": "ENDING_B_05_TITLE_01",
+  "font": 12,
+  "ja": "TECHNOLOGY TEAM",
+  "ko": ""
+ },
+ {
+  "id": "0068.0",
+  "event": "ENDING_B_05_NAME_01",
+  "font": 13,
+  "ja": "WATARU OHMORI\nRYOICHI TAKAHASHI\nTAKUYA SAKAMOTO\nKEISUKE KAMAKAMI\nSHUJI KOHATA",
+  "ko": ""
+ },
+ {
+  "id": "0069.0",
+  "event": "ENDING_B_05_TITLE_02",
+  "font": 12,
+  "ja": "OUTSOURCING",
+  "ko": ""
+ },
+ {
+  "id": "0070.0",
+  "event": "ENDING_B_05_NAME_02",
+  "font": 13,
+  "ja": "TETSUYA SASANO",
+  "ko": ""
+ },
+ {
+  "id": "0071.0",
+  "event": "ENDING_B_06_TITLE_01",
+  "font": 12,
+  "ja": "CHARACTER MODELING",
+  "ko": ""
+ },
+ {
+  "id": "0072.0",
+  "event": "ENDING_B_06_NAME_01",
+  "font": 13,
+  "ja": "TAKUYA KIGUCHI\nYOJI HOSAKA\nTSUBASA NAKAMURA\nMARIKO TAMAKAWA\nABHILASH KHANDURI\nPUNEET PUNJ",
+  "ko": ""
+ },
+ {
+  "id": "0073.0",
+  "event": "ENDING_B_07_TITLE_01",
+  "font": 12,
+  "ja": "ANIMATION",
+  "ko": ""
+ },
+ {
+  "id": "0074.0",
+  "event": "ENDING_B_07_NAME_01",
+  "font": 13,
+  "ja": "TOSHIKI ARAKI",
+  "ko": ""
+ },
+ {
+  "id": "0075.0",
+  "event": "ENDING_B_07_TITLE_02",
+  "font": 12,
+  "ja": "ENVIRONMENT ART",
+  "ko": ""
+ },
+ {
+  "id": "0076.0",
+  "event": "ENDING_B_07_NAME_02",
+  "font": 13,
+  "ja": "YOSHIHISA SHIMIZU\nSATOSHI YAMAGUCHI\nAIRI SUZUKI\nRYO YOSHIDA\nKYOUHEI YAMAGUCHI",
+  "ko": ""
+ },
+ {
+  "id": "0077.0",
+  "event": "ENDING_B_08_TITLE_01",
+  "font": 12,
+  "ja": "ENVIRONMENT ART",
+  "ko": ""
+ },
+ {
+  "id": "0078.0",
+  "event": "ENDING_B_08_NAME_01",
+  "font": 13,
+  "ja": "KEISUKE KEBOUSHI\nTAKESHI ISHIDA\nNAO NISHIDA\nTETSUYA OKUNO\nKEIKO FUJII",
+  "ko": ""
+ },
+ {
+  "id": "0079.0",
+  "event": "ENDING_B_09_TITLE_01",
+  "font": 12,
+  "ja": "ENVIRONMENT ART",
+  "ko": ""
+ },
+ {
+  "id": "0080.0",
+  "event": "ENDING_B_09_NAME_01",
+  "font": 13,
+  "ja": "KOJI OSHIRO\nTAKASHI NAITO\nTAKESHI UCHIYAMA\nYUJIRO HIRAOKA\nNAOKI MOTOORI\nTOMOKO TABATA",
+  "ko": ""
+ },
+ {
+  "id": "0081.0",
+  "event": "ENDING_B_10_TITLE_01",
+  "font": 12,
+  "ja": "ENVIRONMENT ART",
+  "ko": ""
+ },
+ {
+  "id": "0082.0",
+  "event": "ENDING_B_10_NAME_01",
+  "font": 13,
+  "ja": "TAKUYA OMURA\nNOZOMI SUGAWARA\nSUZUNA OTE\nMATTIAS ERIKSSON\nERIC BERGER\nSACHIN SALUJA\nROHIT JAIN",
+  "ko": ""
+ },
+ {
+  "id": "0083.0",
+  "event": "ENDING_B_11_TITLE_01",
+  "font": 12,
+  "ja": "ENVIRONMENT ART",
+  "ko": ""
+ },
+ {
+  "id": "0084.0",
+  "event": "ENDING_B_11_NAME_01",
+  "font": 13,
+  "ja": "GARIMA VERMA\nVIJAY SINGH\nAMAN SINGH\nFEROZ AHMED\nPIYUSH KHANNA\nSYED HASSAN\nNITIN GAUTAM\nRAJPAL JOSAN",
+  "ko": ""
+ },
+ {
+  "id": "0085.0",
+  "event": "ENDING_B_12_TITLE_01",
+  "font": 12,
+  "ja": "MUSIC",
+  "ko": ""
+ },
+ {
+  "id": "0086.0",
+  "event": "ENDING_B_12_NAME_01",
+  "font": 13,
+  "ja": "HITOMI KUROKAWA\nNAOFUMI HARADA\nREI KONDOH\nKEIKI KOBAYASHI",
+  "ko": ""
+ },
+ {
+  "id": "0087.0",
+  "event": "ENDING_B_13_TITLE_01",
+  "font": 12,
+  "ja": "SOUND DESIGN",
+  "ko": ""
+ },
+ {
+  "id": "0088.0",
+  "event": "ENDING_B_13_NAME_01",
+  "font": 13,
+  "ja": "MASAYUKI ENDOU\nMASAYOSHI UMEZU\nRYO INAKURA\nYUUKI TOUJINBARA\nKANAE UCHIYAMA",
+  "ko": ""
+ },
+ {
+  "id": "0089.0",
+  "event": "ENDING_B_14_TITLE_01",
+  "font": 12,
+  "ja": "CINEMATIC ART",
+  "ko": ""
+ },
+ {
+  "id": "0090.0",
+  "event": "ENDING_B_14_NAME_01",
+  "font": 13,
+  "ja": "KUNIKAZU YANAGISAWA\nTATSUYA OZAKI\nTAKASHI NYUI\nANDREW SHIKADA\nHITOSHI NISHIHARA\nRINALDO WIRZ",
+  "ko": ""
+ },
+ {
+  "id": "0091.0",
+  "event": "ENDING_B_15_TITLE_01",
+  "font": 12,
+  "ja": "CINEMATIC ART",
+  "ko": ""
+ },
+ {
+  "id": "0092.0",
+  "event": "ENDING_B_15_NAME_01",
+  "font": 13,
+  "ja": "SHIGERU ARAKI\nMITSURU YOSHIDA\nAKINORI OZAWA",
+  "ko": ""
+ },
+ {
+  "id": "0093.0",
+  "event": "ENDING_B_15_TITLE_02",
+  "font": 12,
+  "ja": "FACIAL ANIMATION",
+  "ko": ""
+ },
+ {
+  "id": "0094.0",
+  "event": "ENDING_B_15_NAME_02",
+  "font": 13,
+  "ja": "MASANORI TAKASHIMA",
+  "ko": ""
+ },
+ {
+  "id": "0095.0",
+  "event": "ENDING_B_16_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0096.0",
+  "event": "ENDING_B_16_NAME_01",
+  "font": 13,
+  "ja": "TAKASHI OOHARA\nKUNPEI SAKAMOTO\nKEI HAYAMI\nKOUSUKE TAKAGUCHI\nTSUGUO MOGAMI\nATSUSHI ABE",
+  "ko": ""
+ },
+ {
+  "id": "0097.0",
+  "event": "ENDING_B_17_TITLE_01",
+  "font": 12,
+  "ja": "NOA LOCALIZATION MANAGEMENT",
+  "ko": ""
+ },
+ {
+  "id": "0098.0",
+  "event": "ENDING_B_17_NAME_01",
+  "font": 13,
+  "ja": "RICH AMTOWER\nNATE BIHLDORFF\nREIKO NINOMIYA\nSCOT RITCHEY",
+  "ko": ""
+ },
+ {
+  "id": "0099.0",
+  "event": "ENDING_B_18_TITLE_01",
+  "font": 12,
+  "ja": "NOA LOCALIZATION",
+  "ko": ""
+ },
+ {
+  "id": "0100.0",
+  "event": "ENDING_B_18_NAME_01",
+  "font": 13,
+  "ja": "ERIKA WEBRIGHT ARLOT\nHÉLÈNE BISSON-PELLAND\nRYAN KELLEY\nDAVID CARRASCO LÓPEZ\nRICH COMEGYS",
+  "ko": ""
+ },
+ {
+  "id": "0101.0",
+  "event": "ENDING_B_19_TITLE_01",
+  "font": 12,
+  "ja": "NOA LOCALIZATION",
+  "ko": ""
+ },
+ {
+  "id": "0102.0",
+  "event": "ENDING_B_19_NAME_01",
+  "font": 13,
+  "ja": "CÉSAR PÉREZ\nCHRIS PRANGER\nSAMANTHA ROBERTSON\nROB TUNSTALL\nTHADDÉE WISEUR",
+  "ko": ""
+ },
+ {
+  "id": "0103.0",
+  "event": "ENDING_B_20_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0104.0",
+  "event": "ENDING_B_20_NAME_01",
+  "font": 13,
+  "ja": "JAZ ADAMS\nLYSSA BROWNE\nJA GREEN\nMARK LUND\nRANDY MIDDLETON\nJAY WARD\nMIKE WEST",
+  "ko": ""
+ },
+ {
+  "id": "0105.0",
+  "event": "ENDING_B_21_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0106.0",
+  "event": "ENDING_B_21_NAME_01",
+  "font": 13,
+  "ja": "DAVE WHITE\nEMMANUEL DABBOUS\nPATRICK DELAGE\nMICHEL ELIAS\nANDRÉ FAUQUENOY\nMARTIAL LE MINOUX\nMARIE ZIDI",
+  "ko": ""
+ },
+ {
+  "id": "0107.0",
+  "event": "ENDING_B_22_TITLE_01",
+  "font": 12,
+  "ja": "NOE LOCALISATION MANAGEMENT",
+  "ko": ""
+ },
+ {
+  "id": "0108.0",
+  "event": "ENDING_B_22_NAME_01",
+  "font": 13,
+  "ja": "NILS DITTBRENNER\nJAN HENNIG\nFABRIZIO CATTANEO\nKAVEH MOUSSAVIAN",
+  "ko": ""
+ },
+ {
+  "id": "0109.0",
+  "event": "ENDING_B_23_TITLE_01",
+  "font": 12,
+  "ja": "NOE LOCALISATION",
+  "ko": ""
+ },
+ {
+  "id": "0110.0",
+  "event": "ENDING_B_23_NAME_01",
+  "font": 13,
+  "ja": "PIERRE SANCHEZ\nJAVIER MARTÍN ÁLVAREZ\nEREN BAYKAL\nPETE SHEPPARD\nSARAH RUTHERFORD-BRYANT\nABDELKADER BELDJILALI\nGURVAN LE GUEN",
+  "ko": ""
+ },
+ {
+  "id": "0111.0",
+  "event": "ENDING_B_24_TITLE_01",
+  "font": 12,
+  "ja": "NOE LOCALISATION",
+  "ko": ""
+ },
+ {
+  "id": "0112.0",
+  "event": "ENDING_B_24_NAME_01",
+  "font": 13,
+  "ja": "EMMANUEL ADIEN\nTITO LEATI\nGIOVANNA PRATI\nMICHAEL HUSSINGER\nSASCHA WEINARD\nJÓNATAN MARCOS MILLÁN\nMIGUEL RODRÍGUEZ RAMOS",
+  "ko": ""
+ },
+ {
+  "id": "0113.0",
+  "event": "ENDING_B_25_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0114.0",
+  "event": "ENDING_B_25_NAME_01",
+  "font": 13,
+  "ja": "JAZ ADAMS\nLYSSA BROWNE\nJA GREEN\nMARK LUND\nRANDY MIDDLETON\nJAY WARD\nMIKE WEST",
+  "ko": ""
+ },
+ {
+  "id": "0115.0",
+  "event": "ENDING_B_26_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0116.0",
+  "event": "ENDING_B_26_NAME_01",
+  "font": 13,
+  "ja": "DAVE WHITE\nEMMANUEL DABBOUS\nPATRICK DELAGE\nMICHEL ELIAS\nANDRÉ FAUQUENOY\nMARTIAL LE MINOUX\nMARIE ZIDI",
+  "ko": ""
+ },
+ {
+  "id": "0117.0",
+  "event": "ENDING_B_27_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0118.0",
+  "event": "ENDING_B_27_NAME_01",
+  "font": 13,
+  "ja": "OLIVIERO CORBETTA\nCINZIA MASSIRONI\nRENATO NOVARA\nRICCARDO ROVATTI\nPAOLO DE SANTIS\nMATTEO ZANOTTI\nNICOLE HANNAK",
+  "ko": ""
+ },
+ {
+  "id": "0119.0",
+  "event": "ENDING_B_28_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0120.0",
+  "event": "ENDING_B_28_NAME_01",
+  "font": 13,
+  "ja": "ANDREAS HOFER\nANDI KRÖSING\nKLAUS LOCHTOVE\nPHILIP SCHWARZ\nJÜRGEN WOLTERS\nDANI ALBIAC\nÁNGEL DE GRACIA",
+  "ko": ""
+ },
+ {
+  "id": "0121.0",
+  "event": "ENDING_B_29_TITLE_01",
+  "font": 12,
+  "ja": "VOICE",
+  "ko": ""
+ },
+ {
+  "id": "0122.0",
+  "event": "ENDING_B_29_NAME_01",
+  "font": 13,
+  "ja": "ARIADNA JIMÉNEZ\nNÚRIA TRIFOL\nRAFAEL TURIA\nALFONSO VALLÉS\nALBERT VILAR",
+  "ko": ""
+ },
+ {
+  "id": "0123.0",
+  "event": "ENDING_B_30_TITLE_01",
+  "font": 12,
+  "ja": "TESTING",
+  "ko": ""
+ },
+ {
+  "id": "0124.0",
+  "event": "ENDING_B_30_NAME_01",
+  "font": 13,
+  "ja": "KIYOSHI ISHIBIKI\nHITOSHI NISHIZAWA\nKO MIYAUCHI\nAKIRA ITO\nTAKESHI TAMURA\nSAYAKA TAKAGI\nHISAYUKI FUJIOKA",
+  "ko": ""
+ },
+ {
+  "id": "0125.0",
+  "event": "ENDING_B_31_TITLE_01",
+  "font": 12,
+  "ja": "TESTING",
+  "ko": ""
+ },
+ {
+  "id": "0126.0",
+  "event": "ENDING_B_31_NAME_01",
+  "font": 13,
+  "ja": "Mario Club Co., Ltd.\nDIGITAL Hearts Co.,Ltd.",
+  "ko": ""
+ },
+ {
+  "id": "0127.0",
+  "event": "ENDING_B_32_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0128.0",
+  "event": "ENDING_B_32_NAME_01",
+  "font": 13,
+  "ja": "TAKAHIRO WATANABE\nKAZUMA NORISADA\nRYO KOIZUMI\nSHIGEHISA NAKAUE\nKANAE DOHTA\nSOTA KAGINO\nYUSUKE NAKANO\nYASUSHI MATSUBARA\n3D Sound Effect Socionext Inc.",
+  "ko": ""
+ },
+ {
+  "id": "0129.0",
+  "event": "ENDING_B_33_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0130.0",
+  "event": "ENDING_B_33_NAME_01",
+  "font": 13,
+  "ja": "TSUYOSHI ODERA\nAYAKA SATO\nMAI OHKURA\nTERUAKI KONISHI\nYOSHIOMI KURE\nTAKAHIRO IWAGAMI\nMITSUHIRO KUBO\nJUMPEI AKASAKA\nATSUSHI KUROOKA\nTAKAHITO WASHISAKA",
+  "ko": ""
+ },
+ {
+  "id": "0131.0",
+  "event": "ENDING_B_34_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0132.0",
+  "event": "ENDING_B_34_NAME_01",
+  "font": 13,
+  "ja": "CHIYASU SHOJI\nTOMOKO NISHII\nAKIKO KURODA\nMASATO TOMURA\nYASUFUMI HASEGAWA\nNATSUMI TASHIRO\nSHU YOSHIMORI",
+  "ko": ""
+ },
+ {
+  "id": "0133.0",
+  "event": "ENDING_B_35_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0134.0",
+  "event": "ENDING_B_35_NAME_01",
+  "font": 13,
+  "ja": "YASUYO IWAWAKI\nYUKA SAWANO\nTOSHIHIKO NAKAGO\nSRD Co., Ltd.\n\nJACOB J K\nLALITHA CHANDRAN\nSUJANITHA SHANKAR\nANSHU ALMEIDA",
+  "ko": ""
+ },
+ {
+  "id": "0135.0",
+  "event": "ENDING_B_36_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0136.0",
+  "event": "ENDING_B_36_NAME_01",
+  "font": 13,
+  "ja": "NAOKI MORO\nKAZUKI TANABE\nAYAKA NAKAMURA\nKAZUHIRO DOSAKA\nMARIKO HIRAOKA\nHIDEYUKI KATO\nKenproduction Co.,Ltd.",
+  "ko": ""
+ },
+ {
+  "id": "0137.0",
+  "event": "ENDING_B_37_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0138.0",
+  "event": "ENDING_B_37_NAME_01",
+  "font": 13,
+  "ja": "ALVION Inc.\nAVANT Inc.\nbee tribe co., ltd.\nBlack Beard Design Studio Inc.\nDesignwave Co., Ltd\nForcewick Sound Design Co.,Ltd.\niNiS Corporation\nITTARO,Inc.",
+  "ko": ""
+ },
+ {
+  "id": "0139.0",
+  "event": "ENDING_B_38_TITLE_01",
+  "font": 12,
+  "ja": "SPECIAL THANKS",
+  "ko": ""
+ },
+ {
+  "id": "0140.0",
+  "event": "ENDING_B_38_NAME_01",
+  "font": 13,
+  "ja": "Japan-izm Co., Ltd.\nJelly Think Inc.\nLakshya Digital PVT. LTD. \nMox Co., Ltd\nTeco Co.,Ltd\nT'sMUSIC CO.,Ltd.\nXAX ENTERTAINMENT Inc.",
+  "ko": ""
+ },
+ {
+  "id": "0141.0",
+  "event": "ENDING_B_39_TITLE_01",
+  "font": 12,
+  "ja": "EXECUTIVE PRODUCERS",
+  "ko": ""
+ },
+ {
+  "id": "0142.0",
+  "event": "ENDING_B_39_NAME_01",
+  "font": 13,
+  "ja": "SATORU IWATA\nTATSUMI KIMISHIMA",
+  "ko": ""
+ },
+ {
+  "id": "0143.0",
+  "event": "ENDING_B_40_NAME_01",
+  "font": 11,
+  "ja": "Nintendo and PlatinumGames Inc. are the authors of this software\nfor the purpose of copyright. All rights reserved.",
+  "ko": ""
+ },
+ {
+  "id": "0144.0",
+  "event": "ENDING_B_40_NAME_02",
+  "font": 11,
+  "ja": "© 2016 Nintendo",
+  "ko": ""
+ },
+ {
+  "id": "0145.0",
+  "event": "ENDING_SUBTITLE_01",
+  "font": 7,
+  "ja": "スターフォックスの諸君\nよくやってくれた!!",
+  "ko": "스타폭스 제군,\n정말 잘해 주었네!!"
+ },
+ {
+  "id": "0146.0",
+  "event": "ENDING_SUBTITLE_02",
+  "font": 7,
+  "ja": "君達さえよければ\n我が軍に入って一緒に・・・",
+  "ko": "자네들만 괜찮다면\n우리 군에 들어와 함께..."
+ },
+ {
+  "id": "0147.0",
+  "event": "ENDING_SUBTITLE_03",
+  "font": 7,
+  "ja": "いえ 我々にはこの方が\n性に合っていますから",
+  "ko": "아뇨, 저희에겐 이쪽이\n성미에 맞으니까요."
+ },
+ {
+  "id": "0148.0",
+  "event": "ENDING_SUBTITLE_04",
+  "font": 7,
+  "ja": "俺達は もう行きます",
+  "ko": "저희는 이만 가 보겠습니다."
+ }
+]

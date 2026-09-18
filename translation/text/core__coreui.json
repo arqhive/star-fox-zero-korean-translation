@@ -1,0 +1,100 @@
+[
+ {
+  "id": "0000.0",
+  "event": "MESS_COMMON_00",
+  "font": 1,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0000.1",
+  "event": "MESS_COMMON_00",
+  "font": 4,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0000.2",
+  "event": "MESS_COMMON_00",
+  "font": 5,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0001.0",
+  "event": "MESS_COMMON_01",
+  "font": 0,
+  "ja": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n-+ !? &'.",
+  "ko": ""
+ },
+ {
+  "id": "0001.1",
+  "event": "MESS_COMMON_01",
+  "font": 6,
+  "ja": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n-+/= !?()\\[\\]{{}}<># %&=\"`'~^|\\\\@:;*,._",
+  "ko": ""
+ },
+ {
+  "id": "0001.2",
+  "event": "MESS_COMMON_01",
+  "font": 16,
+  "ja": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n-+/= !?()\\[\\]{{}}<># %&=\"`'~^|\\\\@:;*,._",
+  "ko": ""
+ },
+ {
+  "id": "0002.0",
+  "event": "MESS_COMMON_02",
+  "font": 3,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0002.1",
+  "event": "MESS_COMMON_02",
+  "font": 2,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0002.2",
+  "event": "MESS_COMMON_02",
+  "font": 9,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0003.0",
+  "event": "MESS_COMMON_03",
+  "font": 13,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0003.1",
+  "event": "MESS_COMMON_03",
+  "font": 12,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0003.2",
+  "event": "MESS_COMMON_03",
+  "font": 11,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0004.0",
+  "event": "MESS_COMMON_04",
+  "font": 14,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ },
+ {
+  "id": "0004.1",
+  "event": "MESS_COMMON_04",
+  "font": 15,
+  "ja": "+-0123456789x.:#/,%",
+  "ko": ""
+ }
+]

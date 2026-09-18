@@ -1,0 +1,1171 @@
+[
+ {
+  "id": "0000.0",
+  "event": "CORE_CHAR_INI_01",
+  "font": 5,
+  "ja": "F",
+  "ko": ""
+ },
+ {
+  "id": "0001.0",
+  "event": "CORE_CHAR_INI_02",
+  "font": 5,
+  "ja": "P",
+  "ko": ""
+ },
+ {
+  "id": "0002.0",
+  "event": "CORE_CHAR_INI_03",
+  "font": 5,
+  "ja": "S",
+  "ko": ""
+ },
+ {
+  "id": "0003.0",
+  "event": "CORE_CHAR_INI_04",
+  "font": 5,
+  "ja": "N",
+  "ko": ""
+ },
+ {
+  "id": "0004.0",
+  "event": "CORE_CHAR_INI_05",
+  "font": 5,
+  "ja": "J",
+  "ko": ""
+ },
+ {
+  "id": "0005.0",
+  "event": "CORE_CHAR_INI_06",
+  "font": 5,
+  "ja": "P",
+  "ko": ""
+ },
+ {
+  "id": "0006.0",
+  "event": "CORE_CHAR_INI_07",
+  "font": 5,
+  "ja": "B",
+  "ko": ""
+ },
+ {
+  "id": "0007.0",
+  "event": "CORE_CHAR_INI_08",
+  "font": 5,
+  "ja": "K",
+  "ko": ""
+ },
+ {
+  "id": "0008.0",
+  "event": "CORE_CHAR_INI_19",
+  "font": 5,
+  "ja": "A",
+  "ko": ""
+ },
+ {
+  "id": "0009.0",
+  "event": "CORE_CHAR_INI_20",
+  "font": 5,
+  "ja": "W",
+  "ko": ""
+ },
+ {
+  "id": "0010.0",
+  "event": "CORE_CHAR_INI_21",
+  "font": 5,
+  "ja": "L",
+  "ko": ""
+ },
+ {
+  "id": "0011.0",
+  "event": "CORE_CHAR_INI_22",
+  "font": 5,
+  "ja": "P",
+  "ko": ""
+ },
+ {
+  "id": "0012.0",
+  "event": "CORE_CHAR_INI_23",
+  "font": 5,
+  "ja": "A",
+  "ko": ""
+ },
+ {
+  "id": "0013.0",
+  "event": "CORE_CHAR_INI_29",
+  "font": 5,
+  "ja": "D",
+  "ko": ""
+ },
+ {
+  "id": "0014.0",
+  "event": "CORE_YN_01",
+  "font": 2,
+  "ja": "はい",
+  "ko": "예"
+ },
+ {
+  "id": "0015.0",
+  "event": "CORE_YN_02",
+  "font": 2,
+  "ja": "いいえ",
+  "ko": "아니요"
+ },
+ {
+  "id": "0016.0",
+  "event": "CORE_YN_03",
+  "font": 2,
+  "ja": "OK",
+  "ko": ""
+ },
+ {
+  "id": "0017.0",
+  "event": "CORE_YN_04",
+  "font": 2,
+  "ja": "閉じる",
+  "ko": "닫기"
+ },
+ {
+  "id": "0018.0",
+  "event": "CORE_BASE_01",
+  "font": 2,
+  "ja": "{I2}\n閉じる",
+  "ko": "{I2}\n닫기"
+ },
+ {
+  "id": "0019.0",
+  "event": "CORE_BASE_02",
+  "font": 2,
+  "ja": "{I3}\n次へ",
+  "ko": "{I3}\n다음"
+ },
+ {
+  "id": "0020.0",
+  "event": "CORE_BASE_06",
+  "font": 2,
+  "ja": "{I3}\nOK",
+  "ko": ""
+ },
+ {
+  "id": "0021.0",
+  "event": "CORE_BASE_03",
+  "font": 2,
+  "ja": "ミッション",
+  "ko": "미션"
+ },
+ {
+  "id": "0022.0",
+  "event": "CORE_BASE_04",
+  "font": 2,
+  "ja": "サテライト1",
+  "ko": "새틀라이트 1"
+ },
+ {
+  "id": "0023.0",
+  "event": "CORE_BASE_05",
+  "font": 2,
+  "ja": "サテライト2",
+  "ko": "새틀라이트 2"
+ },
+ {
+  "id": "0024.0",
+  "event": "CORE_BASE_07",
+  "font": 2,
+  "ja": "Miiverse",
+  "ko": ""
+ },
+ {
+  "id": "0025.0",
+  "event": "CORE_HELP_01",
+  "font": 2,
+  "ja": "{I10}スキップ",
+  "ko": "{I10}스킵"
+ },
+ {
+  "id": "0026.0",
+  "event": "COR_HEAD_PHASE_000",
+  "font": 3,
+  "ja": "フェーズ",
+  "ko": "페이즈"
+ },
+ {
+  "id": "0026.1",
+  "event": "COR_HEAD_PHASE_000",
+  "font": 2,
+  "ja": "フェーズ",
+  "ko": "페이즈"
+ },
+ {
+  "id": "0027.0",
+  "event": "COR_HEAD_PHASE_001",
+  "font": 3,
+  "ja": "トレーニング",
+  "ko": "트레이닝"
+ },
+ {
+  "id": "0027.1",
+  "event": "COR_HEAD_PHASE_001",
+  "font": 2,
+  "ja": "トレーニング",
+  "ko": "트레이닝"
+ },
+ {
+  "id": "0028.0",
+  "event": "COR_CORNERIA_SUB_NAME_001",
+  "font": 2,
+  "ja": "宇宙平和の要",
+  "ko": "우주 평화의 요충지"
+ },
+ {
+  "id": "0029.0",
+  "event": "COR_CORNERIA_SUB_NAME_002",
+  "font": 2,
+  "ja": "超巨大海上移動基地",
+  "ko": "초거대 해상 이동 기지"
+ },
+ {
+  "id": "0030.0",
+  "event": "COR_SECTOR_A_SUB_NAME_001",
+  "font": 2,
+  "ja": "激戦区",
+  "ko": "격전지"
+ },
+ {
+  "id": "0031.0",
+  "event": "COR_SECTOR_A_SUB_NAME_002",
+  "font": 2,
+  "ja": "超高性能全領域戦闘機",
+  "ko": "초고성능 전영역 전투기"
+ },
+ {
+  "id": "0032.0",
+  "event": "COR_AREA_3_SUB_NAME_001",
+  "font": 2,
+  "ja": "宇宙コロニー",
+  "ko": "우주 콜로니"
+ },
+ {
+  "id": "0033.0",
+  "event": "COR_AREA_3_SUB_NAME_002",
+  "font": 2,
+  "ja": "航行禁止区域",
+  "ko": "항행 금지 구역"
+ },
+ {
+  "id": "0034.0",
+  "event": "COR_AREA_3_SUB_NAME_003",
+  "font": 2,
+  "ja": "エリア3",
+  "ko": "에어리어 3"
+ },
+ {
+  "id": "0035.0",
+  "event": "COR_ZONESS_SUB_NAME_001",
+  "font": 2,
+  "ja": "奪われた惑星",
+  "ko": "빼앗긴 행성"
+ },
+ {
+  "id": "0036.0",
+  "event": "COR_ZONESS_SUB_NAME_002",
+  "font": 2,
+  "ja": "惑星ゾネス",
+  "ko": "행성 조네스"
+ },
+ {
+  "id": "0037.0",
+  "event": "COR_SECTOR_B_SUB_NAME_001",
+  "font": 2,
+  "ja": "絶対防衛ライン",
+  "ko": "절대 방위선"
+ },
+ {
+  "id": "0038.0",
+  "event": "COR_TITANIA_SUB_NAME_001",
+  "font": 2,
+  "ja": "禁断の惑星",
+  "ko": "금단의 행성"
+ },
+ {
+  "id": "0039.0",
+  "event": "COR_SECTOR_G_SUB_NAME_001",
+  "font": 2,
+  "ja": "沈黙の領域",
+  "ko": "침묵의 영역"
+ },
+ {
+  "id": "0040.0",
+  "event": "COR_SECTOR_G_SUB_NAME_002",
+  "font": 2,
+  "ja": "超弩級要撃艦",
+  "ko": "초노급 요격함"
+ },
+ {
+  "id": "0041.0",
+  "event": "COR_FICHINA_SUB_NAME_001",
+  "font": 2,
+  "ja": "凍てつく大地",
+  "ko": "얼어붙은 대지"
+ },
+ {
+  "id": "0042.0",
+  "event": "COR_FICHINA_SUB_NAME_002",
+  "font": 2,
+  "ja": "対地強襲用歩行形態",
+  "ko": "대지 강습용 보행 형태"
+ },
+ {
+  "id": "0043.0",
+  "event": "COR_FORTUNA_SUB_NAME_001",
+  "font": 2,
+  "ja": "原始の惑星",
+  "ko": "원시의 행성"
+ },
+ {
+  "id": "0044.0",
+  "event": "COR_SECTOR_O_SUB_NAME_001",
+  "font": 2,
+  "ja": "宇宙の墓場",
+  "ko": "우주의 무덤"
+ },
+ {
+  "id": "0045.0",
+  "event": "COR_VENOM_SUB_NAME_001",
+  "font": 2,
+  "ja": "巨大装置",
+  "ko": "거대 장치"
+ },
+ {
+  "id": "0046.0",
+  "event": "COR_TR_SUB_NAME_001",
+  "font": 2,
+  "ja": "超弩級強襲巡洋母艦",
+  "ko": "초노급 강습 순양모함"
+ },
+ {
+  "id": "0047.0",
+  "event": "COR_CORNERIA_NAME_001",
+  "font": 3,
+  "ja": "惑星コーネリア",
+  "ko": "행성 코네리아"
+ },
+ {
+  "id": "0047.1",
+  "event": "COR_CORNERIA_NAME_001",
+  "font": 2,
+  "ja": "惑星コーネリア",
+  "ko": "행성 코네리아"
+ },
+ {
+  "id": "0047.2",
+  "event": "COR_CORNERIA_NAME_001",
+  "font": 10,
+  "ja": "惑星コーネリア",
+  "ko": "행성 코네리아"
+ },
+ {
+  "id": "0048.0",
+  "event": "COR_SECTOR_A_NAME_001",
+  "font": 3,
+  "ja": "セクターα宙域",
+  "ko": "섹터 α 우주 영역"
+ },
+ {
+  "id": "0048.1",
+  "event": "COR_SECTOR_A_NAME_001",
+  "font": 2,
+  "ja": "セクターα宙域",
+  "ko": "섹터 α 우주 영역"
+ },
+ {
+  "id": "0048.2",
+  "event": "COR_SECTOR_A_NAME_001",
+  "font": 10,
+  "ja": "セクターα宙域",
+  "ko": "섹터 α 우주 영역"
+ },
+ {
+  "id": "0049.0",
+  "event": "COR_SECTOR_A_NAME_002",
+  "font": 3,
+  "ja": "ウルフェン",
+  "ko": "울펜"
+ },
+ {
+  "id": "0049.1",
+  "event": "COR_SECTOR_A_NAME_002",
+  "font": 2,
+  "ja": "ウルフェン",
+  "ko": "울펜"
+ },
+ {
+  "id": "0049.2",
+  "event": "COR_SECTOR_A_NAME_002",
+  "font": 10,
+  "ja": "ウルフェン",
+  "ko": "울펜"
+ },
+ {
+  "id": "0050.0",
+  "event": "COR_AREA_3_NAME_001",
+  "font": 3,
+  "ja": "エリア3",
+  "ko": "에어리어 3"
+ },
+ {
+  "id": "0050.1",
+  "event": "COR_AREA_3_NAME_001",
+  "font": 2,
+  "ja": "エリア3",
+  "ko": "에어리어 3"
+ },
+ {
+  "id": "0050.2",
+  "event": "COR_AREA_3_NAME_001",
+  "font": 10,
+  "ja": "エリア3",
+  "ko": "에어리어 3"
+ },
+ {
+  "id": "0051.0",
+  "event": "COR_AREA_3_NAME_002",
+  "font": 3,
+  "ja": "アステロイドベルト",
+  "ko": "소행성대"
+ },
+ {
+  "id": "0051.1",
+  "event": "COR_AREA_3_NAME_002",
+  "font": 2,
+  "ja": "アステロイドベルト",
+  "ko": "소행성대"
+ },
+ {
+  "id": "0051.2",
+  "event": "COR_AREA_3_NAME_002",
+  "font": 10,
+  "ja": "アステロイドベルト",
+  "ko": "소행성대"
+ },
+ {
+  "id": "0052.0",
+  "event": "COR_AREA_3_NAME_003",
+  "font": 3,
+  "ja": "サテライト1",
+  "ko": "새틀라이트 1"
+ },
+ {
+  "id": "0052.1",
+  "event": "COR_AREA_3_NAME_003",
+  "font": 2,
+  "ja": "サテライト1",
+  "ko": "새틀라이트 1"
+ },
+ {
+  "id": "0052.2",
+  "event": "COR_AREA_3_NAME_003",
+  "font": 10,
+  "ja": "サテライト1",
+  "ko": "새틀라이트 1"
+ },
+ {
+  "id": "0053.0",
+  "event": "COR_ZONESS_NAME_001",
+  "font": 3,
+  "ja": "惑星ゾネス",
+  "ko": "행성 조네스"
+ },
+ {
+  "id": "0053.1",
+  "event": "COR_ZONESS_NAME_001",
+  "font": 2,
+  "ja": "惑星ゾネス",
+  "ko": "행성 조네스"
+ },
+ {
+  "id": "0053.2",
+  "event": "COR_ZONESS_NAME_001",
+  "font": 10,
+  "ja": "惑星ゾネス",
+  "ko": "행성 조네스"
+ },
+ {
+  "id": "0054.0",
+  "event": "COR_ZONESS_NAME_002",
+  "font": 3,
+  "ja": "サテライト2",
+  "ko": "새틀라이트 2"
+ },
+ {
+  "id": "0054.1",
+  "event": "COR_ZONESS_NAME_002",
+  "font": 2,
+  "ja": "サテライト2",
+  "ko": "새틀라이트 2"
+ },
+ {
+  "id": "0054.2",
+  "event": "COR_ZONESS_NAME_002",
+  "font": 10,
+  "ja": "サテライト2",
+  "ko": "새틀라이트 2"
+ },
+ {
+  "id": "0055.0",
+  "event": "COR_SECTOR_B_NAME_001",
+  "font": 3,
+  "ja": "セクターβ宙域",
+  "ko": "섹터 β 우주 영역"
+ },
+ {
+  "id": "0055.1",
+  "event": "COR_SECTOR_B_NAME_001",
+  "font": 2,
+  "ja": "セクターβ宙域",
+  "ko": "섹터 β 우주 영역"
+ },
+ {
+  "id": "0055.2",
+  "event": "COR_SECTOR_B_NAME_001",
+  "font": 10,
+  "ja": "セクターβ宙域",
+  "ko": "섹터 β 우주 영역"
+ },
+ {
+  "id": "0056.0",
+  "event": "COR_TITANIA_NAME_001",
+  "font": 3,
+  "ja": "タイタニア",
+  "ko": "타이타니아"
+ },
+ {
+  "id": "0056.1",
+  "event": "COR_TITANIA_NAME_001",
+  "font": 2,
+  "ja": "タイタニア",
+  "ko": "타이타니아"
+ },
+ {
+  "id": "0056.2",
+  "event": "COR_TITANIA_NAME_001",
+  "font": 10,
+  "ja": "タイタニア",
+  "ko": "타이타니아"
+ },
+ {
+  "id": "0057.0",
+  "event": "COR_SECTOR_G_NAME_001",
+  "font": 3,
+  "ja": "セクターγ宙域",
+  "ko": "섹터 γ 우주 영역"
+ },
+ {
+  "id": "0057.1",
+  "event": "COR_SECTOR_G_NAME_001",
+  "font": 2,
+  "ja": "セクターγ宙域",
+  "ko": "섹터 γ 우주 영역"
+ },
+ {
+  "id": "0057.2",
+  "event": "COR_SECTOR_G_NAME_001",
+  "font": 10,
+  "ja": "セクターγ宙域",
+  "ko": "섹터 γ 우주 영역"
+ },
+ {
+  "id": "0058.0",
+  "event": "COR_FICHINA_NAME_001",
+  "font": 3,
+  "ja": "惑星フィチナ",
+  "ko": "행성 피치나"
+ },
+ {
+  "id": "0058.1",
+  "event": "COR_FICHINA_NAME_001",
+  "font": 2,
+  "ja": "惑星フィチナ",
+  "ko": "행성 피치나"
+ },
+ {
+  "id": "0058.2",
+  "event": "COR_FICHINA_NAME_001",
+  "font": 10,
+  "ja": "惑星フィチナ",
+  "ko": "행성 피치나"
+ },
+ {
+  "id": "0059.0",
+  "event": "COR_FICHINA_NAME_002",
+  "font": 3,
+  "ja": "ハンター",
+  "ko": "헌터"
+ },
+ {
+  "id": "0059.1",
+  "event": "COR_FICHINA_NAME_002",
+  "font": 2,
+  "ja": "ハンター",
+  "ko": "헌터"
+ },
+ {
+  "id": "0059.2",
+  "event": "COR_FICHINA_NAME_002",
+  "font": 10,
+  "ja": "ハンター",
+  "ko": "헌터"
+ },
+ {
+  "id": "0060.0",
+  "event": "COR_FORTUNA_NAME_001",
+  "font": 3,
+  "ja": "フォーチュナ",
+  "ko": "포르투나"
+ },
+ {
+  "id": "0060.1",
+  "event": "COR_FORTUNA_NAME_001",
+  "font": 2,
+  "ja": "フォーチュナ",
+  "ko": "포르투나"
+ },
+ {
+  "id": "0060.2",
+  "event": "COR_FORTUNA_NAME_001",
+  "font": 10,
+  "ja": "フォーチュナ",
+  "ko": "포르투나"
+ },
+ {
+  "id": "0061.0",
+  "event": "COR_SECTOR_O_NAME_001",
+  "font": 3,
+  "ja": "セクターΩ宙域",
+  "ko": "섹터 Ω 우주 영역"
+ },
+ {
+  "id": "0061.1",
+  "event": "COR_SECTOR_O_NAME_001",
+  "font": 2,
+  "ja": "セクターΩ宙域",
+  "ko": "섹터 Ω 우주 영역"
+ },
+ {
+  "id": "0061.2",
+  "event": "COR_SECTOR_O_NAME_001",
+  "font": 10,
+  "ja": "セクターΩ宙域",
+  "ko": "섹터 Ω 우주 영역"
+ },
+ {
+  "id": "0062.0",
+  "event": "COR_VENOM_NAME_001",
+  "font": 3,
+  "ja": "ベノム",
+  "ko": "베놈"
+ },
+ {
+  "id": "0062.1",
+  "event": "COR_VENOM_NAME_001",
+  "font": 2,
+  "ja": "ベノム",
+  "ko": "베놈"
+ },
+ {
+  "id": "0062.2",
+  "event": "COR_VENOM_NAME_001",
+  "font": 10,
+  "ja": "ベノム",
+  "ko": "베놈"
+ },
+ {
+  "id": "0063.0",
+  "event": "COR_TR_NAME_001",
+  "font": 3,
+  "ja": "グレートフォックス",
+  "ko": "그레이트폭스"
+ },
+ {
+  "id": "0063.1",
+  "event": "COR_TR_NAME_001",
+  "font": 2,
+  "ja": "グレートフォックス",
+  "ko": "그레이트폭스"
+ },
+ {
+  "id": "0063.2",
+  "event": "COR_TR_NAME_001",
+  "font": 10,
+  "ja": "グレートフォックス",
+  "ko": "그레이트폭스"
+ },
+ {
+  "id": "0064.0",
+  "event": "COR_TR_NAME_002",
+  "font": 3,
+  "ja": "チャレンジミッション",
+  "ko": "챌린지 미션"
+ },
+ {
+  "id": "0064.1",
+  "event": "COR_TR_NAME_002",
+  "font": 2,
+  "ja": "チャレンジミッション",
+  "ko": "챌린지 미션"
+ },
+ {
+  "id": "0064.2",
+  "event": "COR_TR_NAME_002",
+  "font": 10,
+  "ja": "チャレンジミッション",
+  "ko": "챌린지 미션"
+ },
+ {
+  "id": "0065.0",
+  "event": "COR_TR_NAME_003",
+  "font": 3,
+  "ja": "エクストラミッション",
+  "ko": "엑스트라 미션"
+ },
+ {
+  "id": "0065.1",
+  "event": "COR_TR_NAME_003",
+  "font": 2,
+  "ja": "エクストラミッション",
+  "ko": "엑스트라 미션"
+ },
+ {
+  "id": "0065.2",
+  "event": "COR_TR_NAME_003",
+  "font": 10,
+  "ja": "エクストラミッション",
+  "ko": "엑스트라 미션"
+ },
+ {
+  "id": "0066.0",
+  "event": "COR_CORNERIA_NAME_002",
+  "font": 3,
+  "ja": "惑星コーネリア2",
+  "ko": "행성 코네리아 2"
+ },
+ {
+  "id": "0066.1",
+  "event": "COR_CORNERIA_NAME_002",
+  "font": 2,
+  "ja": "惑星コーネリア2",
+  "ko": "행성 코네리아 2"
+ },
+ {
+  "id": "0066.2",
+  "event": "COR_CORNERIA_NAME_002",
+  "font": 10,
+  "ja": "惑星コーネリア2",
+  "ko": "행성 코네리아 2"
+ },
+ {
+  "id": "0067.0",
+  "event": "COR_CORNERIA_NAME_004",
+  "font": 3,
+  "ja": "シーレシア",
+  "ko": "시레시아"
+ },
+ {
+  "id": "0067.1",
+  "event": "COR_CORNERIA_NAME_004",
+  "font": 2,
+  "ja": "シーレシア",
+  "ko": "시레시아"
+ },
+ {
+  "id": "0067.2",
+  "event": "COR_CORNERIA_NAME_004",
+  "font": 10,
+  "ja": "シーレシア",
+  "ko": "시레시아"
+ },
+ {
+  "id": "0068.0",
+  "event": "COR_SECTOR_G_NAME_002",
+  "font": 3,
+  "ja": "サルバドーラ",
+  "ko": "살바도라"
+ },
+ {
+  "id": "0068.1",
+  "event": "COR_SECTOR_G_NAME_002",
+  "font": 2,
+  "ja": "サルバドーラ",
+  "ko": "살바도라"
+ },
+ {
+  "id": "0068.2",
+  "event": "COR_SECTOR_G_NAME_002",
+  "font": 10,
+  "ja": "サルバドーラ",
+  "ko": "살바도라"
+ },
+ {
+  "id": "0069.0",
+  "event": "COR_CORNERIA_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "スターフォックス出撃!!",
+  "ko": "스타폭스 출격!!"
+ },
+ {
+  "id": "0069.1",
+  "event": "COR_CORNERIA_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "スターフォックス出撃!!",
+  "ko": "스타폭스 출격!!"
+ },
+ {
+  "id": "0070.0",
+  "event": "COR_CORNERIA_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "封印された計画",
+  "ko": "봉인된 계획"
+ },
+ {
+  "id": "0070.1",
+  "event": "COR_CORNERIA_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "封印された計画",
+  "ko": "봉인된 계획"
+ },
+ {
+  "id": "0071.0",
+  "event": "COR_CORNERIA_STAGE_TITLE_003",
+  "font": 3,
+  "ja": "激闘!ウォーカー",
+  "ko": "격전! 워커"
+ },
+ {
+  "id": "0071.1",
+  "event": "COR_CORNERIA_STAGE_TITLE_003",
+  "font": 4,
+  "ja": "激闘!ウォーカー",
+  "ko": "격전! 워커"
+ },
+ {
+  "id": "0072.0",
+  "event": "COR_CORNERIA_STAGE_TITLE_004",
+  "font": 3,
+  "ja": "海上の標的",
+  "ko": "해상의 표적"
+ },
+ {
+  "id": "0072.1",
+  "event": "COR_CORNERIA_STAGE_TITLE_004",
+  "font": 4,
+  "ja": "海上の標的",
+  "ko": "해상의 표적"
+ },
+ {
+  "id": "0073.0",
+  "event": "COR_SECTOR_A_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "激戦区!!",
+  "ko": "격전지!!"
+ },
+ {
+  "id": "0073.1",
+  "event": "COR_SECTOR_A_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "激戦区!!",
+  "ko": "격전지!!"
+ },
+ {
+  "id": "0074.0",
+  "event": "COR_SECTOR_A_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "気高き猿と強欲な豚",
+  "ko": "고고한 원숭이와 탐욕의 돼지"
+ },
+ {
+  "id": "0074.1",
+  "event": "COR_SECTOR_A_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "気高き猿と強欲な豚",
+  "ko": "고고한 원숭이와 탐욕의 돼지"
+ },
+ {
+  "id": "0075.0",
+  "event": "COR_AREA_3_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "守れ!!勝利の鍵",
+  "ko": "지켜라!! 승리의 열쇠"
+ },
+ {
+  "id": "0075.1",
+  "event": "COR_AREA_3_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "守れ!!勝利の鍵",
+  "ko": "지켜라!! 승리의 열쇠"
+ },
+ {
+  "id": "0076.0",
+  "event": "COR_AREA_3_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "弾丸突破!!",
+  "ko": "탄환 돌파!!"
+ },
+ {
+  "id": "0076.1",
+  "event": "COR_AREA_3_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "弾丸突破!!",
+  "ko": "탄환 돌파!!"
+ },
+ {
+  "id": "0077.0",
+  "event": "COR_AREA_3_STAGE_TITLE_003",
+  "font": 3,
+  "ja": "ジャイロウィング危機一髪!!",
+  "ko": "자이로윙 위기일발!!"
+ },
+ {
+  "id": "0077.1",
+  "event": "COR_AREA_3_STAGE_TITLE_003",
+  "font": 4,
+  "ja": "ジャイロウィング危機一髪!!",
+  "ko": "자이로윙 위기일발!!"
+ },
+ {
+  "id": "0078.0",
+  "event": "COR_AREA_3_STAGE_TITLE_004",
+  "font": 3,
+  "ja": "突撃!ランドマスター",
+  "ko": "돌격! 랜드마스터"
+ },
+ {
+  "id": "0078.1",
+  "event": "COR_AREA_3_STAGE_TITLE_004",
+  "font": 4,
+  "ja": "突撃!ランドマスター",
+  "ko": "돌격! 랜드마스터"
+ },
+ {
+  "id": "0079.0",
+  "event": "COR_AREA_3_STAGE_TITLE_005",
+  "font": 3,
+  "ja": "危険な道",
+  "ko": "위험한 길"
+ },
+ {
+  "id": "0079.1",
+  "event": "COR_AREA_3_STAGE_TITLE_005",
+  "font": 4,
+  "ja": "危険な道",
+  "ko": "위험한 길"
+ },
+ {
+  "id": "0080.0",
+  "event": "COR_ZONESS_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "潜入!! 秘密基地",
+  "ko": "잠입!! 비밀 기지"
+ },
+ {
+  "id": "0080.1",
+  "event": "COR_ZONESS_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "潜入!! 秘密基地",
+  "ko": "잠입!! 비밀 기지"
+ },
+ {
+  "id": "0081.0",
+  "event": "COR_ZONESS_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "奇襲!! 秘密基地",
+  "ko": "기습!! 비밀 기지"
+ },
+ {
+  "id": "0081.1",
+  "event": "COR_ZONESS_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "奇襲!! 秘密基地",
+  "ko": "기습!! 비밀 기지"
+ },
+ {
+  "id": "0082.0",
+  "event": "COR_SECTOR_B_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "友との再会",
+  "ko": "친구와의 재회"
+ },
+ {
+  "id": "0082.1",
+  "event": "COR_SECTOR_B_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "友との再会",
+  "ko": "친구와의 재회"
+ },
+ {
+  "id": "0083.0",
+  "event": "COR_TITANIA_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "砂漠の狐",
+  "ko": "사막의 여우"
+ },
+ {
+  "id": "0083.1",
+  "event": "COR_TITANIA_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "砂漠の狐",
+  "ko": "사막의 여우"
+ },
+ {
+  "id": "0084.0",
+  "event": "COR_TITANIA_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "バギーでGO GO!!",
+  "ko": "버기로 GO GO!!"
+ },
+ {
+  "id": "0084.1",
+  "event": "COR_TITANIA_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "バギーでGO GO!!",
+  "ko": "버기로 GO GO!!"
+ },
+ {
+  "id": "0085.0",
+  "event": "COR_SECTOR_G_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "撃墜!!マン・ドリル",
+  "ko": "격추!! 맨 드릴"
+ },
+ {
+  "id": "0085.1",
+  "event": "COR_SECTOR_G_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "撃墜!!マン・ドリル",
+  "ko": "격추!! 맨 드릴"
+ },
+ {
+  "id": "0086.0",
+  "event": "COR_SECTOR_G_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "ペッピーファイト",
+  "ko": "페피 파이트"
+ },
+ {
+  "id": "0086.1",
+  "event": "COR_SECTOR_G_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "ペッピーファイト",
+  "ko": "페피 파이트"
+ },
+ {
+  "id": "0087.0",
+  "event": "COR_FICHINA_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "雪上の決戦!!",
+  "ko": "설원의 결전!!"
+ },
+ {
+  "id": "0087.1",
+  "event": "COR_FICHINA_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "雪上の決戦!!",
+  "ko": "설원의 결전!!"
+ },
+ {
+  "id": "0088.0",
+  "event": "COR_FICHINA_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "バギーでGO!",
+  "ko": "버기로 GO!"
+ },
+ {
+  "id": "0088.1",
+  "event": "COR_FICHINA_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "バギーでGO!",
+  "ko": "버기로 GO!"
+ },
+ {
+  "id": "0089.0",
+  "event": "COR_FICHINA_STAGE_TITLE_003",
+  "font": 3,
+  "ja": "孤高の狼",
+  "ko": "고고한 늑대"
+ },
+ {
+  "id": "0089.1",
+  "event": "COR_FICHINA_STAGE_TITLE_003",
+  "font": 4,
+  "ja": "孤高の狼",
+  "ko": "고고한 늑대"
+ },
+ {
+  "id": "0090.0",
+  "event": "COR_FORTUNA_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "汚染空域を越えて",
+  "ko": "오염 공역을 넘어"
+ },
+ {
+  "id": "0090.1",
+  "event": "COR_FORTUNA_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "汚染空域を越えて",
+  "ko": "오염 공역을 넘어"
+ },
+ {
+  "id": "0091.0",
+  "event": "COR_SECTOR_O_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "強行突破!!",
+  "ko": "강행 돌파!!"
+ },
+ {
+  "id": "0091.1",
+  "event": "COR_SECTOR_O_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "強行突破!!",
+  "ko": "강행 돌파!!"
+ },
+ {
+  "id": "0092.0",
+  "event": "COR_SECTOR_O_STAGE_TITLE_002",
+  "font": 3,
+  "ja": "宇宙航路に異常あり!!",
+  "ko": "우주 항로에 이상 발생!!"
+ },
+ {
+  "id": "0092.1",
+  "event": "COR_SECTOR_O_STAGE_TITLE_002",
+  "font": 4,
+  "ja": "宇宙航路に異常あり!!",
+  "ko": "우주 항로에 이상 발생!!"
+ },
+ {
+  "id": "0093.0",
+  "event": "COR_VENOM_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "最終決戦!!",
+  "ko": "최종 결전!!"
+ },
+ {
+  "id": "0093.1",
+  "event": "COR_VENOM_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "最終決戦!!",
+  "ko": "최종 결전!!"
+ },
+ {
+  "id": "0094.0",
+  "event": "COR_TR_STAGE_TITLE_001",
+  "font": 3,
+  "ja": "トレーニング",
+  "ko": "트레이닝"
+ },
+ {
+  "id": "0094.1",
+  "event": "COR_TR_STAGE_TITLE_001",
+  "font": 4,
+  "ja": "トレーニング",
+  "ko": "트레이닝"
+ }
+]

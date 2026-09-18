@@ -1,0 +1,22 @@
+# 게임 데이터 (저작권 — 커밋하지 않음)
+*.cpk
+*.wud
+*.wux
+*.rpx
+*.app
+*.h3
+*.tmd
+*.tik
+*.cert
+
+# 원본에서 뽑은 작업 파일·빌드 결과
+work/
+out/
+*.log
+
+# 배포용 묶음 (릴리스에만 올림)
+release/*.zip
+release/python/
+
+__pycache__/
+*.pyc

@@ -1,0 +1,1745 @@
+[
+ {
+  "id": "0000.0",
+  "event": "HUD_BASE_01",
+  "font": 5,
+  "ja": "HIT+",
+  "ko": ""
+ },
+ {
+  "id": "0001.0",
+  "event": "HUD_BASE_02",
+  "font": 5,
+  "ja": "LIVE",
+  "ko": ""
+ },
+ {
+  "id": "0002.0",
+  "event": "HUD_BASE_05",
+  "font": 5,
+  "ja": "BOSS",
+  "ko": ""
+ },
+ {
+  "id": "0003.0",
+  "event": "HUD_BASE_06",
+  "font": 5,
+  "ja": "HIT",
+  "ko": ""
+ },
+ {
+  "id": "0004.0",
+  "event": "HUD_BASE_07",
+  "font": 5,
+  "ja": "!",
+  "ko": ""
+ },
+ {
+  "id": "0005.0",
+  "event": "HUD_BASE_08",
+  "font": 12,
+  "ja": "VOLUME",
+  "ko": ""
+ },
+ {
+  "id": "0006.0",
+  "event": "HUD_BASE_09",
+  "font": 12,
+  "ja": "+",
+  "ko": ""
+ },
+ {
+  "id": "0007.0",
+  "event": "HUD_BASE_10",
+  "font": 2,
+  "ja": "ベスト\nタイム",
+  "ko": "베스트\n타임"
+ },
+ {
+  "id": "0008.0",
+  "event": "HUD_BASE_11",
+  "font": 5,
+  "ja": "ZL",
+  "ko": ""
+ },
+ {
+  "id": "0009.0",
+  "event": "HUD_BASE_12",
+  "font": 5,
+  "ja": "Z",
+  "ko": ""
+ },
+ {
+  "id": "0010.0",
+  "event": "HUD_RESULT_BASE_02",
+  "font": 5,
+  "ja": "HIT",
+  "ko": ""
+ },
+ {
+  "id": "0011.0",
+  "event": "HUD_RESULT_BASE_04",
+  "font": 3,
+  "ja": "終了",
+  "ko": "종료"
+ },
+ {
+  "id": "0012.0",
+  "event": "HUD_RESULT_BASE_05",
+  "font": 5,
+  "ja": "トータル",
+  "ko": "합계"
+ },
+ {
+  "id": "0012.1",
+  "event": "HUD_RESULT_BASE_05",
+  "font": 2,
+  "ja": "トータル",
+  "ko": "합계"
+ },
+ {
+  "id": "0013.0",
+  "event": "HUD_RESULT_BASE_07",
+  "font": 5,
+  "ja": "NEW",
+  "ko": ""
+ },
+ {
+  "id": "0014.0",
+  "event": "HUD_RESULT_BASE_13",
+  "font": 2,
+  "ja": "ミッションランキング",
+  "ko": "미션 랭킹"
+ },
+ {
+  "id": "0015.0",
+  "event": "HUD_RESULT_BASE_21",
+  "font": 5,
+  "ja": "フェーズ1",
+  "ko": "페이즈 1"
+ },
+ {
+  "id": "0016.0",
+  "event": "HUD_RESULT_BASE_22",
+  "font": 5,
+  "ja": "フェーズ2",
+  "ko": "페이즈 2"
+ },
+ {
+  "id": "0017.0",
+  "event": "HUD_RESULT_BASE_23",
+  "font": 5,
+  "ja": "フェーズ3",
+  "ko": "페이즈 3"
+ },
+ {
+  "id": "0018.0",
+  "event": "HUD_RESULT_BASE_24",
+  "font": 5,
+  "ja": "ベスト",
+  "ko": "베스트"
+ },
+ {
+  "id": "0019.0",
+  "event": "HUD_RESULT_BASE_25",
+  "font": 5,
+  "ja": "+ボーナス",
+  "ko": "+보너스"
+ },
+ {
+  "id": "0020.0",
+  "event": "HUD_RESULT_BASE_28",
+  "font": 5,
+  "ja": "参考記録",
+  "ko": "참고 기록"
+ },
+ {
+  "id": "0020.1",
+  "event": "HUD_RESULT_BASE_28",
+  "font": 2,
+  "ja": "参考記録",
+  "ko": "참고 기록"
+ },
+ {
+  "id": "0021.0",
+  "event": "HUD_RESULT_BASE_29",
+  "font": 2,
+  "ja": "アーケード トータル",
+  "ko": "아케이드 합계"
+ },
+ {
+  "id": "0022.0",
+  "event": "HUD_RESULT_BASE_14",
+  "font": 5,
+  "ja": "アーケード ベスト",
+  "ko": "아케이드 베스트"
+ },
+ {
+  "id": "0023.0",
+  "event": "HUD_RESULT_BASE_15",
+  "font": 5,
+  "ja": "ベストタイム",
+  "ko": "베스트 타임"
+ },
+ {
+  "id": "0024.0",
+  "event": "HUD_RESULT_BASE_16",
+  "font": 2,
+  "ja": "タイム",
+  "ko": "타임"
+ },
+ {
+  "id": "0025.0",
+  "event": "HUD_RESULT_BASE_17",
+  "font": 5,
+  "ja": "ここまでの\nベスト",
+  "ko": "지금까지의\n베스트"
+ },
+ {
+  "id": "0026.0",
+  "event": "HUD_RESULT_BASE_32",
+  "font": 5,
+  "ja": "ここまでのスコア",
+  "ko": "지금까지의 스코어"
+ },
+ {
+  "id": "0027.0",
+  "event": "HUD_RESULT_BASE_33",
+  "font": 5,
+  "ja": "ここまでのタイム",
+  "ko": "지금까지의 타임"
+ },
+ {
+  "id": "0028.0",
+  "event": "HUD_CHARA_NAME_00",
+  "font": 2,
+  "ja": "フォックス",
+  "ko": "폭스"
+ },
+ {
+  "id": "0029.0",
+  "event": "HUD_CHARA_NAME_01",
+  "font": 2,
+  "ja": "ファルコ",
+  "ko": "팔코"
+ },
+ {
+  "id": "0030.0",
+  "event": "HUD_CHARA_NAME_02",
+  "font": 2,
+  "ja": "ペッピー",
+  "ko": "페피"
+ },
+ {
+  "id": "0031.0",
+  "event": "HUD_CHARA_NAME_03",
+  "font": 2,
+  "ja": "スリッピー",
+  "ko": "슬리피"
+ },
+ {
+  "id": "0032.0",
+  "event": "HUD_CHARA_NAME_04",
+  "font": 2,
+  "ja": "ナウス64",
+  "ko": "나우스 64"
+ },
+ {
+  "id": "0033.0",
+  "event": "HUD_CHARA_NAME_06",
+  "font": 2,
+  "ja": "ペパー将軍",
+  "ko": "페퍼 장군"
+ },
+ {
+  "id": "0034.0",
+  "event": "HUD_CHARA_NAME_22",
+  "font": 2,
+  "ja": "ピグマ",
+  "ko": "피그마"
+ },
+ {
+  "id": "0035.0",
+  "event": "HUD_CORNERIA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "超巨大戦艦",
+  "ko": "초거대 전함"
+ },
+ {
+  "id": "0036.0",
+  "event": "HUD_S_ALPHA_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "スターウルフ",
+  "ko": "스타울프"
+ },
+ {
+  "id": "0037.0",
+  "event": "HUD_AREA_3_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "スターウルフ",
+  "ko": "스타울프"
+ },
+ {
+  "id": "0038.0",
+  "event": "HUD_TITANIA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "地底潜航兵器",
+  "ko": "지저 잠항 병기"
+ },
+ {
+  "id": "0039.0",
+  "event": "HUD_FORTUNA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "古代機械鳥竜",
+  "ko": "고대 기계 조룡"
+ },
+ {
+  "id": "0040.0",
+  "event": "HUD_S_GAMMA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "惑星間巡航ミサイル",
+  "ko": "행성간 순항 미사일"
+ },
+ {
+  "id": "0041.0",
+  "event": "HUD_S_GAMMA_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "超弩級要撃艦",
+  "ko": "초노급 요격함"
+ },
+ {
+  "id": "0042.0",
+  "event": "HUD_FICHINA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "超巨大無人兵器",
+  "ko": "초거대 무인 병기"
+ },
+ {
+  "id": "0043.0",
+  "event": "HUD_FICHINA_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "スターウルフ リーダー",
+  "ko": "스타울프 리더"
+ },
+ {
+  "id": "0044.0",
+  "event": "HUD_FICHINA_BOSS_CLASS_002",
+  "font": 3,
+  "ja": "スターウルフ",
+  "ko": "스타울프"
+ },
+ {
+  "id": "0045.0",
+  "event": "HUD_S_OMEGA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "惑星間戦闘空母",
+  "ko": "행성간 전투 항모"
+ },
+ {
+  "id": "0046.0",
+  "event": "HUD_S_OMEGA_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "宇宙機械鳥竜",
+  "ko": "우주 기계 조룡"
+ },
+ {
+  "id": "0047.0",
+  "event": "HUD_CORNERIA_2_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "巨大機動兵器",
+  "ko": "거대 기동 병기"
+ },
+ {
+  "id": "0048.0",
+  "event": "HUD_S_BETA_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "超高性能全領域戦闘機",
+  "ko": "초고성능 전영역 전투기"
+ },
+ {
+  "id": "0049.0",
+  "event": "HUD_S_BETA_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "準弩級戦略護衛艦",
+  "ko": "준노급 전략 호위함"
+ },
+ {
+  "id": "0050.0",
+  "event": "HUD_CORNERIA_2_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "超巨大海上移動基地",
+  "ko": "초거대 해상 이동 기지"
+ },
+ {
+  "id": "0051.0",
+  "event": "HUD_VENOM_BOSS_CLASS_000",
+  "font": 3,
+  "ja": "天才科学者",
+  "ko": "천재 과학자"
+ },
+ {
+  "id": "0052.0",
+  "event": "HUD_VENOM_BOSS_CLASS_001",
+  "font": 3,
+  "ja": "対地強襲用歩行形態",
+  "ko": "대지 강습용 보행 형태"
+ },
+ {
+  "id": "0053.0",
+  "event": "HUD_GYROWING_CLASS_001",
+  "font": 3,
+  "ja": "AI搭載型作業機",
+  "ko": "AI 탑재형 작업기"
+ },
+ {
+  "id": "0054.0",
+  "event": "HUD_ARWING_CLASS_001",
+  "font": 3,
+  "ja": "超高性能全領域戦闘機",
+  "ko": "초고성능 전영역 전투기"
+ },
+ {
+  "id": "0055.0",
+  "event": "HUD_WALKER_CLASS_001",
+  "font": 3,
+  "ja": "対地強襲用二足歩行形態",
+  "ko": "대지 강습용 이족 보행 형태"
+ },
+ {
+  "id": "0056.0",
+  "event": "HUD_LANDMASTER_CLASS_001",
+  "font": 3,
+  "ja": "超高性能回転式地対空戦車",
+  "ko": "초고성능 회전식 지대공 전차"
+ },
+ {
+  "id": "0057.0",
+  "event": "HUD_GRAVMASTER_CLASS_001",
+  "font": 3,
+  "ja": "反重力飛翔形態",
+  "ko": "반중력 비상 형태"
+ },
+ {
+  "id": "0058.0",
+  "event": "HUD_ROADMASTER_CLASS_001",
+  "font": 3,
+  "ja": "惑星探査用装甲車",
+  "ko": "행성 탐사용 장갑차"
+ },
+ {
+  "id": "0059.0",
+  "event": "HUD_GIGARILLA_CLASS_001",
+  "font": 3,
+  "ja": "巨大機動兵器",
+  "ko": "거대 기동 병기"
+ },
+ {
+  "id": "0060.0",
+  "event": "HUD_CORNERIA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "サルレシア",
+  "ko": "살레시아"
+ },
+ {
+  "id": "0061.0",
+  "event": "HUD_S_ALPHA_BOSS_NAME_001",
+  "font": 4,
+  "ja": "ピグマ\nアンドリュー",
+  "ko": "피그마\n앤드류"
+ },
+ {
+  "id": "0062.0",
+  "event": "HUD_AREA_3_BOSS_NAME_001",
+  "font": 4,
+  "ja": "ピグマ",
+  "ko": "피그마"
+ },
+ {
+  "id": "0063.0",
+  "event": "HUD_TITANIA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "スクラップワーム",
+  "ko": "스크랩 웜"
+ },
+ {
+  "id": "0064.0",
+  "event": "HUD_FORTUNA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "モナーク・ドドラ",
+  "ko": "모나크 도도라"
+ },
+ {
+  "id": "0065.0",
+  "event": "HUD_S_GAMMA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "マン・ドリル",
+  "ko": "맨 드릴"
+ },
+ {
+  "id": "0066.0",
+  "event": "HUD_S_GAMMA_BOSS_NAME_001",
+  "font": 4,
+  "ja": "サルバドーラ",
+  "ko": "살바도라"
+ },
+ {
+  "id": "0067.0",
+  "event": "HUD_FICHINA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "マザーストライダー",
+  "ko": "마더 스트라이더"
+ },
+ {
+  "id": "0068.0",
+  "event": "HUD_FICHINA_BOSS_NAME_001",
+  "font": 4,
+  "ja": "ウルフ",
+  "ko": "울프"
+ },
+ {
+  "id": "0069.0",
+  "event": "HUD_FICHINA_BOSS_NAME_002",
+  "font": 4,
+  "ja": "レオン",
+  "ko": "레온"
+ },
+ {
+  "id": "0070.0",
+  "event": "HUD_S_OMEGA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "アタック・キャリア",
+  "ko": "어택 캐리어"
+ },
+ {
+  "id": "0071.0",
+  "event": "HUD_S_OMEGA_BOSS_NAME_001",
+  "font": 4,
+  "ja": "スペース・ドドラ",
+  "ko": "스페이스 도도라"
+ },
+ {
+  "id": "0072.0",
+  "event": "HUD_CORNERIA_2_BOSS_NAME_000",
+  "font": 4,
+  "ja": "ギガリラ",
+  "ko": "기가릴라"
+ },
+ {
+  "id": "0073.0",
+  "event": "HUD_S_BETA_BOSS_NAME_000",
+  "font": 4,
+  "ja": "ウルフェン",
+  "ko": "울펜"
+ },
+ {
+  "id": "0074.0",
+  "event": "HUD_S_BETA_BOSS_NAME_001",
+  "font": 4,
+  "ja": "グランビー",
+  "ko": "그랜비"
+ },
+ {
+  "id": "0075.0",
+  "event": "HUD_CORNERIA_2_BOSS_NAME_001",
+  "font": 4,
+  "ja": "シーレシア",
+  "ko": "시레시아"
+ },
+ {
+  "id": "0076.0",
+  "event": "HUD_VENOM_BOSS_NAME_000",
+  "font": 4,
+  "ja": "アンドルフ",
+  "ko": "안돌프"
+ },
+ {
+  "id": "0077.0",
+  "event": "HUD_VENOM_BOSS_NAME_001",
+  "font": 4,
+  "ja": "ハンター",
+  "ko": "헌터"
+ },
+ {
+  "id": "0078.0",
+  "event": "HUD_GYROWING_NAME_001",
+  "font": 4,
+  "ja": "ジャイロウィング",
+  "ko": "자이로윙"
+ },
+ {
+  "id": "0079.0",
+  "event": "HUD_ARWING_NAME_001",
+  "font": 4,
+  "ja": "アーウィン",
+  "ko": "아윙"
+ },
+ {
+  "id": "0080.0",
+  "event": "HUD_WALKER_NAME_001",
+  "font": 4,
+  "ja": "ウォーカー",
+  "ko": "워커"
+ },
+ {
+  "id": "0081.0",
+  "event": "HUD_WALKER_NAME_002",
+  "font": 4,
+  "ja": "ウォーカーFX",
+  "ko": "워커 FX"
+ },
+ {
+  "id": "0082.0",
+  "event": "HUD_WALKER_NAME_003",
+  "font": 4,
+  "ja": "ブラックウォーカー",
+  "ko": "블랙 워커"
+ },
+ {
+  "id": "0083.0",
+  "event": "HUD_LANDMASTER_NAME_001",
+  "font": 4,
+  "ja": "ランドマスター",
+  "ko": "랜드마스터"
+ },
+ {
+  "id": "0084.0",
+  "event": "HUD_GRAVMASTER_NAME_001",
+  "font": 4,
+  "ja": "グラヴマスター",
+  "ko": "그라브마스터"
+ },
+ {
+  "id": "0085.0",
+  "event": "HUD_ROADMASTER_NAME_001",
+  "font": 4,
+  "ja": "ロードマスター",
+  "ko": "로드마스터"
+ },
+ {
+  "id": "0086.0",
+  "event": "HUD_ARWING_NAME_002",
+  "font": 4,
+  "ja": "アーウィンFX",
+  "ko": "아윙 FX"
+ },
+ {
+  "id": "0087.0",
+  "event": "HUD_ARWING_NAME_003",
+  "font": 4,
+  "ja": "ブラックアーウィン",
+  "ko": "블랙 아윙"
+ },
+ {
+  "id": "0088.0",
+  "event": "HUD_GIGARILLA_NAME_001",
+  "font": 4,
+  "ja": "ギガリラ",
+  "ko": "기가릴라"
+ },
+ {
+  "id": "0089.0",
+  "event": "HUD_MESS_ORDER_000",
+  "font": 2,
+  "ja": "GamePadを動かし コックピットビューで\n仲間全員を確認してください",
+  "ko": "GamePad를 움직여 콕핏 뷰로\n동료 전원을 확인하세요."
+ },
+ {
+  "id": "0090.0",
+  "event": "HUD_MESS_GUIDE_000",
+  "font": 2,
+  "ja": "{G0}{I105}{I106}{/G0}:正面リセット({I4})",
+  "ko": "{G0}{I105}{I106}{/G0}:정면 리셋({I4})"
+ },
+ {
+  "id": "0091.0",
+  "event": "HUD_MESS_GUIDE_001",
+  "font": 2,
+  "ja": "{I9}:レーザー",
+  "ko": "{I9}:레이저"
+ },
+ {
+  "id": "0092.0",
+  "event": "HUD_MESS_GUIDE_002",
+  "font": 2,
+  "ja": "{G0}{I200}{I201}{/G0}{I43}:ブースト",
+  "ko": "{G0}{I200}{I201}{/G0}{I43}:부스트"
+ },
+ {
+  "id": "0093.0",
+  "event": "HUD_MESS_GUIDE_502",
+  "font": 2,
+  "ja": "{G0}{I30}{I31}{/G0}{I43}:ブースト",
+  "ko": "{G0}{I30}{I31}{/G0}{I43}:부스트"
+ },
+ {
+  "id": "0094.0",
+  "event": "HUD_MESS_GUIDE_003",
+  "font": 2,
+  "ja": "{G0}{I200}{I202}{/G0}{I40}:ブレーキ",
+  "ko": "{G0}{I200}{I202}{/G0}{I40}:브레이크"
+ },
+ {
+  "id": "0095.0",
+  "event": "HUD_MESS_GUIDE_503",
+  "font": 2,
+  "ja": "{G0}{I30}{I32}{/G0}{I40}:ブレーキ",
+  "ko": "{G0}{I30}{I32}{/G0}{I40}:브레이크"
+ },
+ {
+  "id": "0096.0",
+  "event": "HUD_MESS_GUIDE_004",
+  "font": 2,
+  "ja": "弾く{I40}{G0}{I100}{I102}{/G0}+{G0}{I200}{I201}{/G0}{I43}:宙返り({I5})",
+  "ko": "튕겨{I40}{G0}{I100}{I102}{/G0}+{G0}{I200}{I201}{/G0}{I43}:공중제비({I5})"
+ },
+ {
+  "id": "0097.0",
+  "event": "HUD_MESS_GUIDE_104",
+  "font": 2,
+  "ja": "弾く{I39}{G0}{I100}{I101}{/G0}+{G0}{I200}{I201}{/G0}{I43}:宙返り({I5})",
+  "ko": "튕겨{I39}{G0}{I100}{I101}{/G0}+{G0}{I200}{I201}{/G0}{I43}:공중제비({I5})"
+ },
+ {
+  "id": "0098.0",
+  "event": "HUD_MESS_GUIDE_504",
+  "font": 2,
+  "ja": "弾く{I40}{G0}{I54}{I56}{/G0}+{G0}{I30}{I31}{/G0}{I43}:宙返り({I57})",
+  "ko": "튕겨{I40}{G0}{I54}{I56}{/G0}+{G0}{I30}{I31}{/G0}{I43}:공중제비({I57})"
+ },
+ {
+  "id": "0099.0",
+  "event": "HUD_MESS_GUIDE_604",
+  "font": 2,
+  "ja": "弾く{I39}{G0}{I54}{I55}{/G0}+{G0}{I30}{I31}{/G0}{I43}:宙返り({I57})",
+  "ko": "튕겨{I39}{G0}{I54}{I55}{/G0}+{G0}{I30}{I31}{/G0}{I43}:공중제비({I57})"
+ },
+ {
+  "id": "0100.0",
+  "event": "HUD_MESS_GUIDE_005",
+  "font": 2,
+  "ja": "弾く{I40}{G0}{I100}{I102}{/G0}+{G0}{I200}{I202}{/G0}{I40}:Uターン({I2})",
+  "ko": "튕겨{I40}{G0}{I100}{I102}{/G0}+{G0}{I200}{I202}{/G0}{I40}:유턴({I2})"
+ },
+ {
+  "id": "0101.0",
+  "event": "HUD_MESS_GUIDE_105",
+  "font": 2,
+  "ja": "弾く{I39}{G0}{I100}{I101}{/G0}+{G0}{I200}{I202}{/G0}{I40}:Uターン({I2})",
+  "ko": "튕겨{I39}{G0}{I100}{I101}{/G0}+{G0}{I200}{I202}{/G0}{I40}:유턴({I2})"
+ },
+ {
+  "id": "0102.0",
+  "event": "HUD_MESS_GUIDE_505",
+  "font": 2,
+  "ja": "弾く{I40}{G0}{I54}{I56}{/G0}+{G0}{I30}{I32}{/G0}{I40}:Uターン({I58})",
+  "ko": "튕겨{I40}{G0}{I54}{I56}{/G0}+{G0}{I30}{I32}{/G0}{I40}:유턴({I58})"
+ },
+ {
+  "id": "0103.0",
+  "event": "HUD_MESS_GUIDE_605",
+  "font": 2,
+  "ja": "弾く{I39}{G0}{I54}{I55}{/G0}+{G0}{I30}{I32}{/G0}{I40}:Uターン({I58})",
+  "ko": "튕겨{I39}{G0}{I54}{I55}{/G0}+{G0}{I30}{I32}{/G0}{I40}:유턴({I58})"
+ },
+ {
+  "id": "0104.0",
+  "event": "HUD_MESS_GUIDE_006",
+  "font": 2,
+  "ja": "{I8}:ターゲットビュー",
+  "ko": "{I8}:타깃 뷰"
+ },
+ {
+  "id": "0105.0",
+  "event": "HUD_MESS_GUIDE_506",
+  "font": 2,
+  "ja": "{I53}:ターゲットビュー",
+  "ko": "{I53}:타깃 뷰"
+ },
+ {
+  "id": "0106.0",
+  "event": "HUD_MESS_GUIDE_706",
+  "font": 2,
+  "ja": "{I50}:ターゲットビュー",
+  "ko": "{I50}:타깃 뷰"
+ },
+ {
+  "id": "0107.0",
+  "event": "HUD_MESS_GUIDE_008",
+  "font": 2,
+  "ja": "上昇{I43}{G0}{I200}{I201}{I200}{I202}{/G0}{I40}下降",
+  "ko": "상승{I43}{G0}{I200}{I201}{I200}{I202}{/G0}{I40}하강"
+ },
+ {
+  "id": "0108.0",
+  "event": "HUD_MESS_GUIDE_508",
+  "font": 2,
+  "ja": "上昇{I43}{G0}{I30}{I31}{I30}{I32}{/G0}{I40}下降",
+  "ko": "상승{I43}{G0}{I30}{I31}{I30}{I32}{/G0}{I40}하강"
+ },
+ {
+  "id": "0109.0",
+  "event": "HUD_MESS_GUIDE_009",
+  "font": 2,
+  "ja": "{I3}:ダイレクトアイ投下",
+  "ko": "{I3}:다이렉트 아이 투하"
+ },
+ {
+  "id": "0110.0",
+  "event": "HUD_MESS_GUIDE_010",
+  "font": 2,
+  "ja": "{I8}:見下ろし",
+  "ko": "{I8}:내려다보기"
+ },
+ {
+  "id": "0111.0",
+  "event": "HUD_MESS_GUIDE_510",
+  "font": 2,
+  "ja": "{I53}:見下ろし",
+  "ko": "{I53}:내려다보기"
+ },
+ {
+  "id": "0112.0",
+  "event": "HUD_MESS_GUIDE_710",
+  "font": 2,
+  "ja": "{I50}:見下ろし",
+  "ko": "{I50}:내려다보기"
+ },
+ {
+  "id": "0113.0",
+  "event": "HUD_MESS_GUIDE_011",
+  "font": 2,
+  "ja": "{G0}{I200}{I202}{I202}{I202}{I202}{I202}{/G0}{I40}:ホバリング",
+  "ko": "{G0}{I200}{I202}{I202}{I202}{I202}{I202}{/G0}{I40}:호버링"
+ },
+ {
+  "id": "0114.0",
+  "event": "HUD_MESS_GUIDE_511",
+  "font": 2,
+  "ja": "{G0}{I30}{I32}{I32}{I32}{I32}{I32}{/G0}{I40}:ホバリング",
+  "ko": "{G0}{I30}{I32}{I32}{I32}{I32}{I32}{/G0}{I40}:호버링"
+ },
+ {
+  "id": "0115.0",
+  "event": "HUD_MESS_GUIDE_012",
+  "font": 2,
+  "ja": "{G0}{I200}{I201}{I201}{I201}{I201}{I201}{/G0}{I43}:ダッシュ",
+  "ko": "{G0}{I200}{I201}{I201}{I201}{I201}{I201}{/G0}{I43}:대시"
+ },
+ {
+  "id": "0116.0",
+  "event": "HUD_MESS_GUIDE_512",
+  "font": 2,
+  "ja": "{G0}{I30}{I31}{I31}{I31}{I31}{I31}{/G0}{I43}:ダッシュ",
+  "ko": "{G0}{I30}{I31}{I31}{I31}{I31}{I31}{/G0}{I43}:대시"
+ },
+ {
+  "id": "0117.0",
+  "event": "HUD_MESS_GUIDE_013",
+  "font": 2,
+  "ja": "{I41}{I41}{G0}{I205}{I203}{I205}{I203}{I205}{I204}{I205}{I204}{/G0}{I42}{I42}:ローリング",
+  "ko": "{I41}{I41}{G0}{I205}{I203}{I205}{I203}{I205}{I204}{I205}{I204}{/G0}{I42}{I42}:롤링"
+ },
+ {
+  "id": "0118.0",
+  "event": "HUD_MESS_GUIDE_513",
+  "font": 2,
+  "ja": "{I41}{I41}{G0}{I30}{I33}{I30}{I33}{I30}{I34}{I30}{I34}{/G0}{I42}{I42}:ローリング",
+  "ko": "{I41}{I41}{G0}{I30}{I33}{I30}{I33}{I30}{I34}{I30}{I34}{/G0}{I42}{I42}:롤링"
+ },
+ {
+  "id": "0119.0",
+  "event": "HUD_MESS_GUIDE_014",
+  "font": 2,
+  "ja": "{I3}:変形",
+  "ko": "{I3}:변형"
+ },
+ {
+  "id": "0120.0",
+  "event": "HUD_MESS_GUIDE_015",
+  "font": 2,
+  "ja": "{I9}押し続ける:チャージ弾",
+  "ko": "{I9}길게 누르기:충전탄"
+ },
+ {
+  "id": "0121.0",
+  "event": "HUD_MESS_GUIDE_016",
+  "font": 2,
+  "ja": "上昇{I40}{G0}{I100}{I102}{I100}{I101}{/G0}{I43}下降",
+  "ko": "상승{I40}{G0}{I100}{I102}{I100}{I101}{/G0}{I43}하강"
+ },
+ {
+  "id": "0122.0",
+  "event": "HUD_MESS_GUIDE_116",
+  "font": 2,
+  "ja": "上昇{I39}{G0}{I100}{I101}{I100}{I102}{/G0}{I44}下降",
+  "ko": "상승{I39}{G0}{I100}{I101}{I100}{I102}{/G0}{I44}하강"
+ },
+ {
+  "id": "0123.0",
+  "event": "HUD_MESS_GUIDE_017",
+  "font": 2,
+  "ja": "{I10}:操作説明",
+  "ko": "{I10}:조작 설명"
+ },
+ {
+  "id": "0124.0",
+  "event": "HUD_MESS_GUIDE_018",
+  "font": 2,
+  "ja": "{I9}を押しながら ジャイロ操作",
+  "ko": "{I9} 누른 채로 자이로 조작"
+ },
+ {
+  "id": "0125.0",
+  "event": "HUD_MESS_GUIDE_019",
+  "font": 2,
+  "ja": "爆弾の真上で{I3}",
+  "ko": "폭탄 바로 위에서{I3}"
+ },
+ {
+  "id": "0126.0",
+  "event": "HUD_MESS_GUIDE_020",
+  "font": 2,
+  "ja": "{I9}:リリース",
+  "ko": "{I9}:릴리스"
+ },
+ {
+  "id": "0127.0",
+  "event": "HUD_MESS_GUIDE_021",
+  "font": 2,
+  "ja": "{G0}{I250}{I253}{I254}{I250}{I251}{I252}{/G0}:照準の移動",
+  "ko": "{G0}{I250}{I253}{I254}{I250}{I251}{I252}{/G0}:조준 이동"
+ },
+ {
+  "id": "0128.0",
+  "event": "HUD_MESS_GUIDE_121",
+  "font": 2,
+  "ja": "{I9}+{G0}{I250}{I253}{I254}{I250}{I251}{I252}{/G0}:照準の移動",
+  "ko": "{I9}+{G0}{I250}{I253}{I254}{I250}{I251}{I252}{/G0}:조준 이동"
+ },
+ {
+  "id": "0129.0",
+  "event": "HUD_MESS_GUIDE_022",
+  "font": 2,
+  "ja": "{I250}:コックピットビュー",
+  "ko": "{I250}:콕핏 뷰"
+ },
+ {
+  "id": "0130.0",
+  "event": "HUD_MESS_GUIDE_122",
+  "font": 2,
+  "ja": "{I500}:コックピットビュー",
+  "ko": "{I500}:콕핏 뷰"
+ },
+ {
+  "id": "0131.0",
+  "event": "HUD_MESS_GUIDE_222",
+  "font": 2,
+  "ja": "{I250}:ダイレクトアイ",
+  "ko": "{I250}:다이렉트 아이"
+ },
+ {
+  "id": "0132.0",
+  "event": "HUD_MESS_GUIDE_322",
+  "font": 2,
+  "ja": "{I500}:ダイレクトアイ",
+  "ko": "{I500}:다이렉트 아이"
+ },
+ {
+  "id": "0133.0",
+  "event": "HUD_MESS_GUIDE_023",
+  "font": 2,
+  "ja": "{I8}:ギガリラ注目",
+  "ko": "{I8}:기가릴라 주시"
+ },
+ {
+  "id": "0134.0",
+  "event": "HUD_MESS_GUIDE_523",
+  "font": 2,
+  "ja": "{I53}:ギガリラ注目",
+  "ko": "{I53}:기가릴라 주시"
+ },
+ {
+  "id": "0135.0",
+  "event": "HUD_MESS_GUIDE_723",
+  "font": 2,
+  "ja": "{I50}:ギガリラ注目",
+  "ko": "{I50}:기가릴라 주시"
+ },
+ {
+  "id": "0136.0",
+  "event": "HUD_MESS_GUIDE_024",
+  "font": 2,
+  "ja": "{I9}押し続ける:ミサイル",
+  "ko": "{I9}길게 누르기:미사일"
+ },
+ {
+  "id": "0137.0",
+  "event": "HUD_MESS_GUIDE_025",
+  "font": 2,
+  "ja": "{G0}{I200}{I201}{/G0}{I43}:上昇",
+  "ko": "{G0}{I200}{I201}{/G0}{I43}:상승"
+ },
+ {
+  "id": "0138.0",
+  "event": "HUD_MESS_GUIDE_525",
+  "font": 2,
+  "ja": "{G0}{I30}{I31}{/G0}{I43}:上昇",
+  "ko": "{G0}{I30}{I31}{/G0}{I43}:상승"
+ },
+ {
+  "id": "0139.0",
+  "event": "HUD_MESS_GUIDE_027",
+  "font": 2,
+  "ja": "{I7}:ボム({I29})",
+  "ko": "{I7}:봄({I29})"
+ },
+ {
+  "id": "0140.0",
+  "event": "HUD_MESS_GUIDE_028",
+  "font": 2,
+  "ja": "{I501}に接触:システムハック",
+  "ko": "{I501}에 접촉:시스템 해킹"
+ },
+ {
+  "id": "0141.0",
+  "event": "HUD_MESS_GUIDE_029",
+  "font": 2,
+  "ja": "{I41}{G0}{I205}{I203}{I205}{I204}{/G0}{I42}:旋回",
+  "ko": "{I41}{G0}{I205}{I203}{I205}{I204}{/G0}{I42}:선회"
+ },
+ {
+  "id": "0142.0",
+  "event": "HUD_MESS_GUIDE_529",
+  "font": 2,
+  "ja": "{I41}{G0}{I30}{I33}{I30}{I33}{I30}{I34}{I30}{I34}{/G0}{I42}:旋回",
+  "ko": "{I41}{G0}{I30}{I33}{I30}{I33}{I30}{I34}{I30}{I34}{/G0}{I42}:선회"
+ },
+ {
+  "id": "0143.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "コーネリア都市へ急行せよ!",
+  "ko": "코네리아 시가지로 급행하라!"
+ },
+ {
+  "id": "0143.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "コーネリア都市へ急行せよ!",
+  "ko": "코네리아 시가지로 급행하라!"
+ },
+ {
+  "id": "0144.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "ペパー将軍を守れ!",
+  "ko": "페퍼 장군을 지켜라!"
+ },
+ {
+  "id": "0144.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "ペパー将軍を守れ!",
+  "ko": "페퍼 장군을 지켜라!"
+ },
+ {
+  "id": "0145.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_003",
+  "font": 3,
+  "ja": "襲来 サルレシア",
+  "ko": "습격 살레시아"
+ },
+ {
+  "id": "0145.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_003",
+  "font": 10,
+  "ja": "襲来 サルレシア",
+  "ko": "습격 살레시아"
+ },
+ {
+  "id": "0146.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_101",
+  "font": 3,
+  "ja": "猛攻 アンドルフ軍!",
+  "ko": "맹공 안돌프군!"
+ },
+ {
+  "id": "0146.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_101",
+  "font": 10,
+  "ja": "猛攻 アンドルフ軍!",
+  "ko": "맹공 안돌프군!"
+ },
+ {
+  "id": "0147.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_102",
+  "font": 3,
+  "ja": "狙われたタワーの秘密!",
+  "ko": "노려진 타워의 비밀!"
+ },
+ {
+  "id": "0147.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_102",
+  "font": 10,
+  "ja": "狙われたタワーの秘密!",
+  "ko": "노려진 타워의 비밀!"
+ },
+ {
+  "id": "0148.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_103",
+  "font": 3,
+  "ja": "取り戻されたギガリラ",
+  "ko": "되찾은 기가릴라"
+ },
+ {
+  "id": "0148.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_103",
+  "font": 10,
+  "ja": "取り戻されたギガリラ",
+  "ko": "되찾은 기가릴라"
+ },
+ {
+  "id": "0149.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "タワーを守れ!\n(制限時間:5分)",
+  "ko": "타워를 지켜라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0149.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "タワーを守れ!\n(制限時間:5分)",
+  "ko": "타워를 지켜라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0150.0",
+  "event": "HUD_CORNERIA_PHASE_TITLE_202",
+  "font": 3,
+  "ja": "超巨大海上移動基地を倒せ!\n(制限時間:5分)",
+  "ko": "초거대 해상 이동 기지 격파!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0150.1",
+  "event": "HUD_CORNERIA_PHASE_TITLE_202",
+  "font": 10,
+  "ja": "超巨大海上移動基地を倒せ!\n(制限時間:5分)",
+  "ko": "초거대 해상 이동 기지 격파!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0151.0",
+  "event": "HUD_SECTOR_A_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "敵の砲撃を食い止めろ!",
+  "ko": "적의 포격을 저지하라!"
+ },
+ {
+  "id": "0151.1",
+  "event": "HUD_SECTOR_A_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "敵の砲撃を食い止めろ!",
+  "ko": "적의 포격을 저지하라!"
+ },
+ {
+  "id": "0152.0",
+  "event": "HUD_SECTOR_A_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "潜入 敵巨大戦艦!",
+  "ko": "잠입 적 거대 전함!"
+ },
+ {
+  "id": "0152.1",
+  "event": "HUD_SECTOR_A_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "潜入 敵巨大戦艦!",
+  "ko": "잠입 적 거대 전함!"
+ },
+ {
+  "id": "0153.0",
+  "event": "HUD_SECTOR_A_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "敵を倒せ!\n(制限時間:5分)",
+  "ko": "적을 쓰러뜨려라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0153.1",
+  "event": "HUD_SECTOR_A_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "敵を倒せ!\n(制限時間:5分)",
+  "ko": "적을 쓰러뜨려라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0154.0",
+  "event": "HUD_AREA_3_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "急行! 宇宙コロニー",
+  "ko": "급행! 우주 콜로니"
+ },
+ {
+  "id": "0154.1",
+  "event": "HUD_AREA_3_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "急行! 宇宙コロニー",
+  "ko": "급행! 우주 콜로니"
+ },
+ {
+  "id": "0155.0",
+  "event": "HUD_AREA_3_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "ギガリラを起動せよ!",
+  "ko": "기가릴라를 기동하라!"
+ },
+ {
+  "id": "0155.1",
+  "event": "HUD_AREA_3_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "ギガリラを起動せよ!",
+  "ko": "기가릴라를 기동하라!"
+ },
+ {
+  "id": "0156.0",
+  "event": "HUD_AREA_3_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "都市を飛びぬけろ!!",
+  "ko": "도시를 빠져나가라!!"
+ },
+ {
+  "id": "0156.1",
+  "event": "HUD_AREA_3_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "都市を飛びぬけろ!!",
+  "ko": "도시를 빠져나가라!!"
+ },
+ {
+  "id": "0157.0",
+  "event": "HUD_AREA_3_PHASE_TITLE_202",
+  "font": 3,
+  "ja": "敵を倒せ!\n(制限時間:5分)",
+  "ko": "적을 쓰러뜨려라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0157.1",
+  "event": "HUD_AREA_3_PHASE_TITLE_202",
+  "font": 10,
+  "ja": "敵を倒せ!\n(制限時間:5分)",
+  "ko": "적을 쓰러뜨려라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0158.0",
+  "event": "HUD_AREA_3_PHASE_TITLE_203",
+  "font": 3,
+  "ja": "敵を倒せ!\n(制限時間:5分)",
+  "ko": "적을 쓰러뜨려라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0158.1",
+  "event": "HUD_AREA_3_PHASE_TITLE_203",
+  "font": 10,
+  "ja": "敵を倒せ!\n(制限時間:5分)",
+  "ko": "적을 쓰러뜨려라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0159.0",
+  "event": "HUD_AREA_3_PHASE_TITLE_204",
+  "font": 3,
+  "ja": "母艦グレートフォックスを守れ!",
+  "ko": "모함 그레이트폭스를 지켜라!"
+ },
+ {
+  "id": "0159.1",
+  "event": "HUD_AREA_3_PHASE_TITLE_204",
+  "font": 10,
+  "ja": "母艦グレートフォックスを守れ!",
+  "ko": "모함 그레이트폭스를 지켜라!"
+ },
+ {
+  "id": "0160.0",
+  "event": "HUD_ZONESS_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "基地のシールドを解除せよ!",
+  "ko": "기지의 실드를 해제하라!"
+ },
+ {
+  "id": "0160.1",
+  "event": "HUD_ZONESS_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "基地のシールドを解除せよ!",
+  "ko": "기지의 실드를 해제하라!"
+ },
+ {
+  "id": "0161.0",
+  "event": "HUD_ZONESS_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "アーウィンで切り抜けろ!\n(制限時間:7分)",
+  "ko": "아윙으로 돌파하라!\n(제한 시간:7분)"
+ },
+ {
+  "id": "0161.1",
+  "event": "HUD_ZONESS_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "アーウィンで切り抜けろ!\n(制限時間:7分)",
+  "ko": "아윙으로 돌파하라!\n(제한 시간:7분)"
+ },
+ {
+  "id": "0162.0",
+  "event": "HUD_SECTOR_B_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "コーネリア軍に加勢せよ!",
+  "ko": "코네리아군을 지원하라!"
+ },
+ {
+  "id": "0162.1",
+  "event": "HUD_SECTOR_B_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "コーネリア軍に加勢せよ!",
+  "ko": "코네리아군을 지원하라!"
+ },
+ {
+  "id": "0163.0",
+  "event": "HUD_SECTOR_B_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "ライバル強襲!",
+  "ko": "라이벌 강습!"
+ },
+ {
+  "id": "0163.1",
+  "event": "HUD_SECTOR_B_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "ライバル強襲!",
+  "ko": "라이벌 강습!"
+ },
+ {
+  "id": "0164.0",
+  "event": "HUD_TITANIA_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "ペッピーの行方",
+  "ko": "페피의 행방"
+ },
+ {
+  "id": "0164.1",
+  "event": "HUD_TITANIA_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "ペッピーの行方",
+  "ko": "페피의 행방"
+ },
+ {
+  "id": "0165.0",
+  "event": "HUD_TITANIA_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "砂漠の主",
+  "ko": "사막의 주인"
+ },
+ {
+  "id": "0165.1",
+  "event": "HUD_TITANIA_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "砂漠の主",
+  "ko": "사막의 주인"
+ },
+ {
+  "id": "0166.0",
+  "event": "HUD_TITANIA_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "制限時間内にゴールせよ!\n(制限時間:2分)",
+  "ko": "제한 시간 내에 골인하라!\n(제한 시간:2분)"
+ },
+ {
+  "id": "0166.1",
+  "event": "HUD_TITANIA_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "制限時間内にゴールせよ!\n(制限時間:2分)",
+  "ko": "제한 시간 내에 골인하라!\n(제한 시간:2분)"
+ },
+ {
+  "id": "0167.0",
+  "event": "HUD_SECTOR_G_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "ミサイルの転送を阻止せよ!",
+  "ko": "미사일 전송을 저지하라!"
+ },
+ {
+  "id": "0167.1",
+  "event": "HUD_SECTOR_G_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "ミサイルの転送を阻止せよ!",
+  "ko": "미사일 전송을 저지하라!"
+ },
+ {
+  "id": "0168.0",
+  "event": "HUD_SECTOR_G_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "超弩級要撃艦を無力化せよ!\n(制限時間:5分)",
+  "ko": "초노급 요격함을 무력화하라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0168.1",
+  "event": "HUD_SECTOR_G_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "超弩級要撃艦を無力化せよ!\n(制限時間:5分)",
+  "ko": "초노급 요격함을 무력화하라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0169.0",
+  "event": "HUD_FICHINA_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "巨大兵器を探れ!",
+  "ko": "거대 병기를 조사하라!"
+ },
+ {
+  "id": "0169.1",
+  "event": "HUD_FICHINA_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "巨大兵器を探れ!",
+  "ko": "거대 병기를 조사하라!"
+ },
+ {
+  "id": "0170.0",
+  "event": "HUD_FICHINA_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "ストライダーの巣窟",
+  "ko": "스트라이더의 소굴"
+ },
+ {
+  "id": "0170.1",
+  "event": "HUD_FICHINA_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "ストライダーの巣窟",
+  "ko": "스트라이더의 소굴"
+ },
+ {
+  "id": "0171.0",
+  "event": "HUD_FICHINA_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "メダルを集めろ!\n(制限時間:5分)",
+  "ko": "메달을 모아라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0171.1",
+  "event": "HUD_FICHINA_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "メダルを集めろ!\n(制限時間:5分)",
+  "ko": "메달을 모아라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0172.0",
+  "event": "HUD_FICHINA_PHASE_TITLE_202",
+  "font": 3,
+  "ja": "一騎打ちに勝利せよ!\n(制限時間:5分)",
+  "ko": "일대일 대결에서 승리하라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0172.1",
+  "event": "HUD_FICHINA_PHASE_TITLE_202",
+  "font": 10,
+  "ja": "一騎打ちに勝利せよ!\n(制限時間:5分)",
+  "ko": "일대일 대결에서 승리하라!\n(제한 시간:5분)"
+ },
+ {
+  "id": "0173.0",
+  "event": "HUD_FORTUNA_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "巨大な影を追え!",
+  "ko": "거대한 그림자를 쫓아라!"
+ },
+ {
+  "id": "0173.1",
+  "event": "HUD_FORTUNA_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "巨大な影を追え!",
+  "ko": "거대한 그림자를 쫓아라!"
+ },
+ {
+  "id": "0174.0",
+  "event": "HUD_FORTUNA_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "モナーク・ドドラ降臨!",
+  "ko": "모나크 도도라 강림!"
+ },
+ {
+  "id": "0174.1",
+  "event": "HUD_FORTUNA_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "モナーク・ドドラ降臨!",
+  "ko": "모나크 도도라 강림!"
+ },
+ {
+  "id": "0175.0",
+  "event": "HUD_SECTOR_O_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "ベノムへの近道",
+  "ko": "베놈으로 가는 지름길"
+ },
+ {
+  "id": "0175.1",
+  "event": "HUD_SECTOR_O_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "ベノムへの近道",
+  "ko": "베놈으로 가는 지름길"
+ },
+ {
+  "id": "0176.0",
+  "event": "HUD_SECTOR_O_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "強襲 アタック・キャリア!",
+  "ko": "강습 어택 캐리어!"
+ },
+ {
+  "id": "0176.1",
+  "event": "HUD_SECTOR_O_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "強襲 アタック・キャリア!",
+  "ko": "강습 어택 캐리어!"
+ },
+ {
+  "id": "0177.0",
+  "event": "HUD_SECTOR_O_PHASE_TITLE_201",
+  "font": 3,
+  "ja": "果てしなき旅",
+  "ko": "끝없는 여정"
+ },
+ {
+  "id": "0177.1",
+  "event": "HUD_SECTOR_O_PHASE_TITLE_201",
+  "font": 10,
+  "ja": "果てしなき旅",
+  "ko": "끝없는 여정"
+ },
+ {
+  "id": "0178.0",
+  "event": "HUD_VENOM_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "アンドルフの元へ!",
+  "ko": "안돌프에게로!"
+ },
+ {
+  "id": "0178.1",
+  "event": "HUD_VENOM_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "アンドルフの元へ!",
+  "ko": "안돌프에게로!"
+ },
+ {
+  "id": "0179.0",
+  "event": "HUD_VENOM_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "夢幻回廊",
+  "ko": "몽환 회랑"
+ },
+ {
+  "id": "0179.1",
+  "event": "HUD_VENOM_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "夢幻回廊",
+  "ko": "몽환 회랑"
+ },
+ {
+  "id": "0180.0",
+  "event": "HUD_VENOM_PHASE_TITLE_003",
+  "font": 3,
+  "ja": "最後の戦い!",
+  "ko": "마지막 전투!"
+ },
+ {
+  "id": "0180.1",
+  "event": "HUD_VENOM_PHASE_TITLE_003",
+  "font": 10,
+  "ja": "最後の戦い!",
+  "ko": "마지막 전투!"
+ },
+ {
+  "id": "0181.0",
+  "event": "HUD_TRAINING_PHASE_TITLE_001",
+  "font": 3,
+  "ja": "日々の鍛練",
+  "ko": "매일의 단련"
+ },
+ {
+  "id": "0181.1",
+  "event": "HUD_TRAINING_PHASE_TITLE_001",
+  "font": 10,
+  "ja": "日々の鍛練",
+  "ko": "매일의 단련"
+ },
+ {
+  "id": "0182.0",
+  "event": "HUD_TRAINING_PHASE_TITLE_002",
+  "font": 3,
+  "ja": "リングを全てくぐれ!",
+  "ko": "링을 모두 통과하라!"
+ },
+ {
+  "id": "0182.1",
+  "event": "HUD_TRAINING_PHASE_TITLE_002",
+  "font": 10,
+  "ja": "リングを全てくぐれ!",
+  "ko": "링을 모두 통과하라!"
+ },
+ {
+  "id": "0183.0",
+  "event": "HUD_TRAINING_PHASE_TITLE_003",
+  "font": 3,
+  "ja": "メダルを集めろ!",
+  "ko": "메달을 모아라!"
+ },
+ {
+  "id": "0183.1",
+  "event": "HUD_TRAINING_PHASE_TITLE_003",
+  "font": 10,
+  "ja": "メダルを集めろ!",
+  "ko": "메달을 모아라!"
+ },
+ {
+  "id": "0184.0",
+  "event": "HUD_CLEAR_COMPLETE_001",
+  "font": 8,
+  "ja": "作",
+  "ko": "작"
+ },
+ {
+  "id": "0185.0",
+  "event": "HUD_CLEAR_COMPLETE_002",
+  "font": 8,
+  "ja": "戦",
+  "ko": "전"
+ },
+ {
+  "id": "0186.0",
+  "event": "HUD_CLEAR_COMPLETE_003",
+  "font": 8,
+  "ja": "完",
+  "ko": "완"
+ },
+ {
+  "id": "0187.0",
+  "event": "HUD_CLEAR_COMPLETE_004",
+  "font": 8,
+  "ja": "了",
+  "ko": "료"
+ },
+ {
+  "id": "0188.0",
+  "event": "HUD_CLEAR_COMPLETE_101",
+  "font": 8,
+  "ja": "訓",
+  "ko": "훈"
+ },
+ {
+  "id": "0189.0",
+  "event": "HUD_CLEAR_COMPLETE_102",
+  "font": 8,
+  "ja": "練",
+  "ko": "련"
+ },
+ {
+  "id": "0190.0",
+  "event": "HUD_CLEAR_COMPLETE_103",
+  "font": 14,
+  "ja": "TRAINING",
+  "ko": ""
+ },
+ {
+  "id": "0191.0",
+  "event": "HUD_CLEAR_COMPLETE_005",
+  "font": 14,
+  "ja": "MISSION",
+  "ko": ""
+ },
+ {
+  "id": "0192.0",
+  "event": "HUD_CLEAR_COMPLETE_006",
+  "font": 14,
+  "ja": "ACCOM",
+  "ko": ""
+ },
+ {
+  "id": "0193.0",
+  "event": "HUD_CLEAR_COMPLETE_007",
+  "font": 14,
+  "ja": "PLISHED",
+  "ko": ""
+ },
+ {
+  "id": "0194.0",
+  "event": "HUD_CLEAR_FINISH_003",
+  "font": 8,
+  "ja": "終",
+  "ko": "종"
+ },
+ {
+  "id": "0195.0",
+  "event": "HUD_CLEAR_FINISH_006",
+  "font": 14,
+  "ja": "COMP",
+  "ko": ""
+ },
+ {
+  "id": "0196.0",
+  "event": "HUD_CLEAR_FINISH_007",
+  "font": 14,
+  "ja": "LETE",
+  "ko": ""
+ },
+ {
+  "id": "0197.0",
+  "event": "HUD_FAIL_003",
+  "font": 8,
+  "ja": "失",
+  "ko": "실"
+ },
+ {
+  "id": "0198.0",
+  "event": "HUD_FAIL_004",
+  "font": 8,
+  "ja": "敗",
+  "ko": "패"
+ },
+ {
+  "id": "0199.0",
+  "event": "HUD_FAIL_006",
+  "font": 14,
+  "ja": "FAI",
+  "ko": ""
+ },
+ {
+  "id": "0200.0",
+  "event": "HUD_FAIL_007",
+  "font": 14,
+  "ja": "LED",
+  "ko": ""
+ },
+ {
+  "id": "0201.0",
+  "event": "HUD_BREAK_INFO_001",
+  "font": 1,
+  "ja": "次のミッションへ進みます",
+  "ko": "다음 미션으로 진행합니다."
+ },
+ {
+  "id": "0202.0",
+  "event": "HUD_BREAK_INFO_002",
+  "font": 2,
+  "ja": "中断",
+  "ko": "중단"
+ },
+ {
+  "id": "0203.0",
+  "event": "HUD_BREAK_INFO_003",
+  "font": 1,
+  "ja": "ゲームを中断しますか?\nアーケードモードのプレイ状況が\n保存されます",
+  "ko": "게임을 중단할까요?\n아케이드 모드 진행 상황이\n저장됩니다."
+ },
+ {
+  "id": "0204.0",
+  "event": "HUD_NEXT_INFO_001",
+  "font": 1,
+  "ja": "転送装置を使用し ゾネスへ\n向かいますか?",
+  "ko": "전송 장치로 조네스에\n가시겠습니까?"
+ },
+ {
+  "id": "0205.0",
+  "event": "HUD_NEXT_INFO_002",
+  "font": 1,
+  "ja": "転送装置を使用し ベノムへ\n向かいますか?",
+  "ko": "전송 장치로 베놈에\n가시겠습니까?"
+ }
+]

@@ -1,0 +1,16 @@
+[
+ {
+  "id": "0000.0",
+  "event": "test_font_04",
+  "font": 4,
+  "ja": "惑星コーネリア",
+  "ko": ""
+ },
+ {
+  "id": "0001.0",
+  "event": "test_font_11",
+  "font": 14,
+  "ja": "Corneria",
+  "ko": ""
+ }
+]
