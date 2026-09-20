@@ -10,7 +10,7 @@ from paths import WORK as ROOT, ORIG, TEXT
 
 
 def mcd_files():
-    return sorted(glob.glob(os.path.join(ORIG, '*', '*.mcd')))
+    return sorted(glob.glob(os.path.join(glob.escape(ORIG), '*', '*.mcd')))
 
 
 def json_path(mcd_path):

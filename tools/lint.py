@@ -30,12 +30,12 @@ def new_adv(font, ch, h):
 
 def main(names):
     problems = 0
-    for jp in sorted(glob.glob(os.path.join(TEXT, '*.json'))):
+    for jp in sorted(glob.glob(os.path.join(glob.escape(TEXT), '*.json'))):
         key = os.path.basename(jp)[:-5]
         if key in SKIP or (names and key not in names):
             continue
         rows = json.load(open(jp, encoding='utf-8'))
-        mcds = glob.glob(os.path.join(ORIG, key + '.dat', '*.mcd'))
+        mcds = glob.glob(os.path.join(glob.escape(ORIG), glob.escape(key + '.dat'), '*.mcd'))
         if not mcds:   # 원본을 아직 추출하지 않은 파일 (번역 대상이 아님)
             continue
         m = MCD(open(mcds[0], 'rb').read())

@@ -39,7 +39,7 @@ def find_source(arg):
 def load_rows():
     """번역 JSON 중 ko 가 채워진 것만"""
     rows = {}
-    for jp in sorted(glob.glob(os.path.join(paths.TEXT, '*.json'))):
+    for jp in sorted(glob.glob(os.path.join(glob.escape(paths.TEXT), '*.json'))):
         key = os.path.basename(jp)[:-5]
         if key in paths.SKIP_KEYS:
             continue
@@ -54,7 +54,7 @@ def extract(cpk, keys, log):
     need = {}
     for key in keys:
         dst = os.path.join(paths.ORIG, key + '.dat')
-        if os.path.exists(dst + '.dat') and glob.glob(os.path.join(dst, '*.mcd')):
+        if os.path.exists(dst + '.dat') and glob.glob(os.path.join(glob.escape(dst), '*.mcd')):
             continue
         need[paths.dat_path(key)] = (key, dst)
     if not need:
