@@ -16,6 +16,7 @@ out/
 
 # 배포용 묶음 (릴리스에만 올림)
 release/*.zip
+release/graphics_*/
 release/python/
 release/patcher/payload/
 release/patcher/lib/__pycache__/

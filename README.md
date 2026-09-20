@@ -22,7 +22,7 @@ SDCafiine 경로까지 복사합니다.
 | 파일 | 값 |
 |---|---|
 | 원본 (일본판 data003.cpk) | 815,910,328 바이트 / SHA-1 `9dfa60ddbb9b0e1ebcc313eae6ca081244c312b1` |
-| 패치 결과 (v1.0) | 890,469,816 바이트 / SHA-1 `499dbda07a4dd1f21be7ff04d7551adda9f46ddb` |
+| 패치 결과 (v1.1) | 890,469,816 바이트 / SHA-1 `5c6f88d641b52ebded3d3fd2a56d28eed03d4413` |
 
 만들어진 파일을 아래 위치에 넣습니다.
 
@@ -52,9 +52,12 @@ python tools/patch.py <원본 data003.cpk> -o out
 
 ### 배포본 만들기
 
+그래픽 개선판(v1.1)의 변경 사항과 기존 v1.0 완성본에서 다시 만드는 방법은
+[`docs/GRAPHICS_UPDATE.md`](docs/GRAPHICS_UPDATE.md)를 참고하세요.
+
 ```
 python tools/patch.py <원본 data003.cpk> -o out          # 한글판 CPK 빌드
-python tools/make_release.py <원본 data003.cpk> --version v1.0
+python tools/make_release.py <원본 data003.cpk> --version v1.1
 ```
 
 `make_release.py` 는 원본과 빌드 결과를 비교해 바뀐 파일만 `release/patcher/payload` 에 담고

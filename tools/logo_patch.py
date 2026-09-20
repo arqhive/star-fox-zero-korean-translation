@@ -10,14 +10,14 @@ SS = 4
 TEXT = '스타폭스 제로'
 # (erase box x0, y0, x1, y1), text span x0..x1, ink top..bottom — measured from the original texture
 REGIONS = [
-    dict(erase=(190, 492, 559, 523), span=(195, 555), ink=(500, 522)),
-    dict(erase=(1672, 190, 2040, 224), span=(1676, 2035), ink=(197, 219)),
+    dict(erase=(190, 492, 559, 523), span=(195, 555), ink=(497, 522)),
+    dict(erase=(1672, 190, 2040, 224), span=(1676, 2035), ink=(194, 219)),
 ]
 SHEAR = 0.28      # italic slant like the original katakana
 WEIGHT = 900
 EMB = 0.25        # extra emboldening (px)
 XSCALE = 1.15     # the original katakana is wide and squat
-GAP_RATIO = 0.45  # gap between syllables relative to syllable width
+GAP_RATIO = 0.48  # gap between syllables relative to syllable width
 SPACE_RATIO = 0.9 # extra width of the word space
 
 
@@ -67,22 +67,30 @@ def paint(rgba):
         ink_h = y1 - y0
         glyphs = [None if c == ' ' else _render_syllable(c, ink_h) for c in TEXT]
         sx0, sx1 = r['span']
+        scale = ink_h * SS / max(g.shape[0] for g in glyphs if g is not None)
+        glyphs = [None if g is None else np.array(Image.fromarray(g).resize(
+            (max(1, round(g.shape[1] * scale)), max(1, round(g.shape[0] * scale))),
+            Image.Resampling.LANCZOS)).clip(0, 255) for g in glyphs]
         widths = [g.shape[1] if g is not None else 0 for g in glyphs]
         avg = np.mean([w for w in widths if w])
         gap = avg * GAP_RATIO
-        total = sum(widths) + gap * (len(TEXT) - 1) + avg * SPACE_RATIO * TEXT.count(' ')
-        x = ((sx1 - sx0) * SS - total) / 2  # centred in the original span
-        canvas = np.zeros((ink_h * SS + 8 * SS, (sx1 - sx0) * SS + 8 * SS), np.float32)
+        x = 0.0
+        placements = []
         for g, w, ch in zip(glyphs, widths, TEXT):
             if g is not None:
-                h = min(g.shape[0], canvas.shape[0])
-                xi = int(round(x))
-                ww = min(w, canvas.shape[1] - xi)
-                canvas[:h, xi:xi + ww] = np.maximum(canvas[:h, xi:xi + ww], g[:h, :ww])
+                placements.append((round(x), g))
                 x += w + gap
             else:
                 x += avg * SPACE_RATIO
-        alpha = _down(canvas)[:ink_h + 2, :sx1 - sx0 + 2]
+        total = max(xi + g.shape[1] for xi, g in placements)
+        if total > (sx1 - sx0) * SS:
+            raise ValueError('Title lettering exceeds its texture region')
+        canvas = np.zeros((ink_h * SS, (sx1 - sx0) * SS), np.float32)
+        offset = round((canvas.shape[1] - total) / 2)
+        for xi, g in placements:
+            h, w = g.shape
+            canvas[:h, offset + xi:offset + xi + w] = g
+        alpha = _down(canvas)
         ah, aw = alpha.shape
         dst = out[y0:y0 + ah, sx0:sx0 + aw]
         # original text: near-white with a slight darker band in the lower half

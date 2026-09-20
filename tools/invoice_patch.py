@@ -13,18 +13,18 @@ TEX_INDEX = 1
 PRINT = (40, 47, 34)
 # name: (ink bbox of the original text x0,y0,x1,y1), text, font, weight, align, colour, extra
 ITEMS = [
-    ('title',    (431, 55, 590, 115), '청구서',              'noto', 900, 'center', (74, 145, 15), {}),
-    ('koneria',  (169, 159, 411, 210), '코네리아 방위',       'pen', 0,   'center', (8, 10, 8), {'line': 211, 'scale': 0.78}),
+    ('title',    (431, 55, 590, 115), '청구서',              'noto', 900, 'center', (74, 145, 15), {'original_shading': True}),
+    ('koneria',  (169, 159, 411, 210), '코네리아 방위',       'pen', 0,   'center', (8, 10, 8), {'line': 211, 'scale': 0.90}),
     ('gun',      (470, 194, 490, 213), '군',                 'noto', 700, 'left',   PRINT, {}),
-    ('pepper',   (586, 164, 800, 210), '페퍼 장군',           'pen', 0,   'center', (20, 22, 20), {'line': 211, 'scale': 0.82}),
+    ('pepper',   (586, 164, 800, 210), '페퍼 장군',           'pen', 0,   'center', (20, 22, 20), {'line': 211, 'scale': 0.94}),
     ('den',      (843, 194, 863, 213), '귀하',               'noto', 700, 'left',   PRINT, {}),
     ('kaki',     (583, 232, 881, 252), '다음 금액을 청구합니다.', 'noto', 700, 'right',  PRINT, {}),
-    ('andross',  (176, 279, 342, 328), '안돌프',              'pen', 0,   'center', (20, 22, 20), {'line': 329, 'scale': 0.82}),
+    ('andross',  (176, 279, 342, 328), '안돌프',              'pen', 0,   'center', (20, 22, 20), {'line': 329, 'scale': 0.92}),
     ('heiki',    (414, 311, 546, 331), '군 병기 격추 수',      'noto', 700, 'left',   PRINT, {}),
     ('kini',     (799, 311, 894, 331), '기에 따라,',           'noto', 700, 'left',   PRINT, {}),
     ('seikyu2',  (696, 448, 881, 468), '위 금액을 청구합니다.',  'noto', 700, 'right',  PRINT, {}),
     ('yatoware', (440, 502, 582, 522), '용병 유격대',          'noto', 900, 'center', (123, 162, 88), {'outline': (73, 92, 63)}),
-    ('sign',     (340, 599, 682, 649), '폭스 맥클라우드',       'pen', 0,   'center', (20, 22, 20), {'scale': 0.85}),
+    ('sign',     (340, 599, 682, 649), '폭스 맥클라우드',       'pen', 0,   'center', (20, 22, 20), {'scale': 0.96}),
 ]
 
 
@@ -38,11 +38,13 @@ def _font(kind, size, weight):
 
 def _render_mask(text, kind, weight, ink_h, stroke=0):
     """alpha mask (float 0..255, at 1x) whose ink height ~= ink_h"""
-    ref = '한글' if kind == 'noto' else '한'
+    # Handwriting has unusually tall consonants/descenders: measure the actual phrase.
+    ref = '한글' if kind == 'noto' else text
     size = int(ink_h * SS * 1.3)
     for _ in range(6):
-        im = Image.new('L', (size * 4, size * 3))
-        ImageDraw.Draw(im).text((size, size), ref, font=_font(kind, size, weight), fill=255)
+        f = _font(kind, size, weight)
+        im = Image.new('L', (int(f.getlength(ref)) + size * 2, size * 3))
+        ImageDraw.Draw(im).text((size, size), ref, font=f, fill=255)
         ys = np.nonzero(np.array(im).max(1) > 40)[0]
         size = max(8, round(size * ink_h * SS / (ys[-1] - ys[0] + 1)))
     f = _font(kind, size, weight)
@@ -53,9 +55,27 @@ def _render_mask(text, kind, weight, ink_h, stroke=0):
     ys = np.nonzero(a.max(1) > 10)[0]
     xs = np.nonzero(a.max(0) > 10)[0]
     a = a[ys[0]:ys[-1] + 1, xs[0]:xs[-1] + 1]
+    if kind == 'pen' and not stroke:
+        # Enforce the final ink height, including faint antialiasing pixels.
+        target_h = max(1, int(ink_h * SS))
+        target_w = max(1, round(a.shape[1] * target_h / a.shape[0]))
+        a = np.array(Image.fromarray(a).resize((target_w, target_h), Image.Resampling.LANCZOS))
     h, w = a.shape
     a = np.pad(a, ((0, (-h) % SS), (0, (-w) % SS)))
     return a.reshape(a.shape[0] // SS, SS, a.shape[1] // SS, SS).mean((1, 3))
+
+
+def _title_shading(rgb, box, height):
+    """Recover the original green ink's vertical colour profile, not its lettering."""
+    x0, y0, x1, y1 = box
+    src = rgb[y0:y1 + 1, x0:x1 + 1].astype(np.float32)
+    green = (src[:, :, 1] - src[:, :, 0] > 15) & (src[:, :, 1] - src[:, :, 2] > 45)
+    rows = np.flatnonzero(green.sum(1) >= 8)
+    if not len(rows):
+        raise ValueError('Original invoice title has no usable green ink')
+    colours = np.array([np.median(src[y, green[y]], axis=0) for y in rows])
+    positions = np.linspace(0, len(src) - 1, height)
+    return np.stack([np.interp(positions, rows, colours[:, c]) for c in range(3)], -1)[:, None, :]
 
 
 def _inpaint(img, mask, iters=400):
@@ -110,6 +130,15 @@ def paint(rgb):
             ink_h = int(round(ink_h * 0.95))
         ink_h = int(round(ink_h * extra.get('scale', 1.0)))
         mask = _render_mask(text, kind, weight, ink_h)
+        if kind == 'pen':
+            max_h = min(y1 - y0 + 1, extra.get('line', y1 + 4) - 3 - y0)
+            max_w = x1 - x0 + 1
+            scale = min(1.0, max_h / mask.shape[0], max_w / mask.shape[1])
+            if scale < 1:
+                mask = np.array(Image.fromarray(mask).resize(
+                    (max(1, int(mask.shape[1] * scale)), max(1, int(mask.shape[0] * scale))),
+                    Image.Resampling.LANCZOS))
+            mask = mask.clip(0, 255)
         h, w = mask.shape
         cy = (y0 + y1) / 2
         ty = int(round(cy - h / 2))
@@ -128,7 +157,8 @@ def paint(rgb):
             a = (om / 255.0)[:, :, None]
             img[oy:oy + oh, ox:ox + ow] = img[oy:oy + oh, ox:ox + ow] * (1 - a) + np.array(extra['outline']) * a
         a = (mask / 255.0)[:, :, None]
-        img[ty:ty + h, tx:tx + w] = img[ty:ty + h, tx:tx + w] * (1 - a) + np.array(colour) * a
+        fill = _title_shading(rgb, (x0, y0, x1, y1), h) if extra.get('original_shading') else np.array(colour)
+        img[ty:ty + h, tx:tx + w] = img[ty:ty + h, tx:tx + w] * (1 - a) + fill * a
     return img.round().clip(0, 255).astype(np.uint8)
 
 
