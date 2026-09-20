@@ -35,7 +35,10 @@ def main(names):
         if key in SKIP or (names and key not in names):
             continue
         rows = json.load(open(jp, encoding='utf-8'))
-        m = MCD(open(glob.glob(os.path.join(ORIG, key + '.dat', '*.mcd'))[0], 'rb').read())
+        mcds = glob.glob(os.path.join(ORIG, key + '.dat', '*.mcd'))
+        if not mcds:   # 원본을 아직 추출하지 않은 파일 (번역 대상이 아님)
+            continue
+        m = MCD(open(mcds[0], 'rb').read())
         glyph_adv = {}
         for f, c, gi in m.symbols:
             glyph_adv[(f, c)] = struct.unpack('>I9f', m.glyphs[gi])[5]

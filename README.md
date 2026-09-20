@@ -19,10 +19,10 @@
 결과 파일은 만들어질 때 MD5 로 자동 검사합니다. `패치하기.bat --sd E:` 처럼 SD 카드 드라이브를 주면
 SDCafiine 경로까지 복사합니다.
 
-| 원본 (일본판 data003.cpk) | 값 |
+| 파일 | 값 |
 |---|---|
-| 크기 | 815,910,328 바이트 |
-| SHA-1 | `9dfa60ddbb9b0e1ebcc313eae6ca081244c312b1` |
+| 원본 (일본판 data003.cpk) | 815,910,328 바이트 / SHA-1 `9dfa60ddbb9b0e1ebcc313eae6ca081244c312b1` |
+| 패치 결과 (v1.0) | 890,469,816 바이트 / SHA-1 `499dbda07a4dd1f21be7ff04d7551adda9f46ddb` |
 
 만들어진 파일을 아래 위치에 넣습니다.
 
@@ -54,7 +54,7 @@ python tools/patch.py <원본 data003.cpk> -o out
 
 ```
 python tools/patch.py <원본 data003.cpk> -o out          # 한글판 CPK 빌드
-python tools/make_release.py <원본 data003.cpk> --version v0.9
+python tools/make_release.py <원본 data003.cpk> --version v1.0
 ```
 
 `make_release.py` 는 원본과 빌드 결과를 비교해 바뀐 파일만 `release/patcher/payload` 에 담고
