@@ -15,7 +15,9 @@
 ## 사용자용: 패치 적용
 
 릴리스에서 받은 압축을 풀고, 원본 `data003.cpk` 를 같은 폴더에 둔 뒤 `패치하기.bat` 를 실행하면
-`out\data003.cpk` 가 만들어집니다. (파이썬이 함께 들어 있어 따로 설치할 필요가 없습니다.)
+`out\data003.cpk` 가 만들어집니다. 30초~2분이면 끝나고, 파이썬이 함께 들어 있어 따로 설치할 필요가 없습니다.
+결과 파일은 만들어질 때 MD5 로 자동 검사합니다. `패치하기.bat --sd E:` 처럼 SD 카드 드라이브를 주면
+SDCafiine 경로까지 복사합니다.
 
 | 원본 (일본판 data003.cpk) | 값 |
 |---|---|
@@ -48,6 +50,18 @@ python tools/patch.py <원본 data003.cpk> -o out
 | 원본 `data003.cpk` | 일본판에서 덤프 |
 | 폰트 | `tools/fonts/` 에 포함 (Noto Sans KR, 나눔손글씨 펜 — 둘 다 OFL) |
 
+### 배포본 만들기
+
+```
+python tools/patch.py <원본 data003.cpk> -o out          # 한글판 CPK 빌드
+python tools/make_release.py <원본 data003.cpk> --version v0.9
+```
+
+`make_release.py` 는 원본과 빌드 결과를 비교해 바뀐 파일만 `release/patcher/payload` 에 담고
+(글자 아틀라스·MCD 는 통째로, 그림 텍스처는 달라진 4KB 블록만) zip 을 만듭니다.
+`release/python` 에 [python.org embeddable](https://www.python.org/downloads/windows/) 을 풀어 두면 함께 담깁니다.
+받는 쪽은 numpy·Pillow·폰트 없이 표준 라이브러리만으로 패치를 적용합니다.
+
 ### 번역 수정
 
 1. `translation/text/*.json` 의 `ko` 항목을 고칩니다. 표기 규칙은
@@ -66,7 +80,7 @@ python tools/patch.py <원본 data003.cpk> -o out
 | `translation/text/` | 번역 JSON 29개 (원문 `ja` + 번역 `ko`) |
 | `translation/*.md` | 용어집, 구두점·문체 규칙 |
 | `docs/TECHNICAL.md` | 파일 포맷과 패치 방식 설명 |
-| `release/` | 배포용 안내문 |
+| `release/` | 배포용 패처(표준 라이브러리만 사용)와 안내문 |
 | `work/` | 원본에서 뽑은 작업 파일 (커밋하지 않음) |
 
 ## 라이선스
