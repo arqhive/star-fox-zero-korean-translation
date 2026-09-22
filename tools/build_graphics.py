@@ -1,7 +1,10 @@
 """Upgrade only the two illustrated textures in an existing Korean CPK.
 
-python tools/build_graphics.py --base out/data003.cpk --output out/graphics_v1.1
-Original files and the v1.0 release are never overwritten.
+One-off tool used to make v1.1 from v1.0. Both inputs must be v1.0 artifacts,
+rebuilt from the v1.0 tag if needed (they are no longer kept in the repo):
+
+python tools/build_graphics.py --base v1.0/data003.cpk --release-base v1.0_release --output out/graphics_v1.1
+Original files and the v1.0 inputs are never overwritten.
 """
 import argparse
 import hashlib
@@ -158,10 +161,10 @@ def build(base, original_dir, output, release_base, release_output):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--base', type=Path, default=Path(paths.ROOT) / 'out/data003.cpk')
+    parser.add_argument('--base', type=Path, required=True, help='v1.0 Korean data003.cpk')
     parser.add_argument('--original-dir', type=Path, default=Path(paths.ORIG))
     parser.add_argument('--output', type=Path, default=Path(paths.ROOT) / 'out/graphics_v1.1')
-    parser.add_argument('--release-base', type=Path, default=Path(paths.ROOT) / 'release')
+    parser.add_argument('--release-base', type=Path, required=True, help='folder with the v1.0 patcher/payload')
     parser.add_argument('--release-output', type=Path, default=Path(paths.ROOT) / 'release/graphics_v1.1')
     args = parser.parse_args()
     build(args.base.resolve(), args.original_dir.resolve(), args.output.resolve(),

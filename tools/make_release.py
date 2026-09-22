@@ -4,7 +4,7 @@
  - mess*.mcd/.wta/.wtp (한글 텍스트·글자 아틀라스)  -> full  (새 파일 통째로)
  - 그 밖의 .wtp (한글로 고친 그림)                  -> delta (달라진 4KB 블록만)
 
-사용: python tools/make_release.py <원본 data003.cpk> [--built out/data003.cpk] [--version v0.9]
+사용: python tools/make_release.py <원본 data003.cpk> [--built out/data003.cpk] [--version v1.1]
 release/python 에 python.org embeddable 을 풀어 두면 zip 에 함께 담는다.
 """
 import argparse, hashlib, json, os, shutil, sys, zipfile
@@ -115,7 +115,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('source', help='원본 data003.cpk')
     ap.add_argument('--built', default=os.path.join(paths.ROOT, 'out', 'data003.cpk'), help='한글판 data003.cpk')
-    ap.add_argument('--version', default='v0.9')
+    ap.add_argument('--version', default='v1.1')
     a = ap.parse_args()
     build_payload(a.source, a.built, a.version)
     make_zip(a.version)

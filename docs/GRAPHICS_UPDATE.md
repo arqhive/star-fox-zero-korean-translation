@@ -10,14 +10,13 @@
 
 - `out/graphics_v1.1/data003.cpk`: 바로 사용할 수 있는 개선판 CPK.
 - `release/StarFoxZero_KO_v1.1.zip`: 원본 일본판 CPK에 적용하는 독립 배포용 패처. v1.0 패치를 먼저 적용할 필요가 없다.
-- 기존 `out/data003.cpk`, `release/StarFoxZero_KO_v1.0.zip`은 유지한다.
 
 ## 재생성
 
-저장소 루트에서 다음과 같이 실행한다. 원본 추출 데이터, v1.0 완성 CPK, 기존 release 폴더의 payload와 임베디드 Python이 필요하다.
+저장소 루트에서 다음과 같이 실행한다. 원본 추출 데이터, v1.0 완성 CPK, v1.0 payload가 든 release 폴더, 임베디드 Python이 필요하다. v1.0 파일은 더 이상 보관하지 않으므로 `v1.0` 태그에서 다시 빌드해 준비한다.
 
 ```powershell
-python tools/build_graphics.py --original-dir work/orig
+python tools/build_graphics.py --base <v1.0 data003.cpk> --release-base <v1.0 release 폴더> --original-dir work/orig
 ```
 
 원본 추출 데이터가 저장소 바깥에 있다면 `--original-dir`로 그 경로를 지정한다. 출력 폴더가 이미 있으면 덮어쓰지 않고 중단한다. 재생성 시에는 `--output`과 `--release-output`에 새 경로를 지정하며, ZIP도 기존 파일과 충돌하지 않도록 다른 부모 폴더를 사용한다.
