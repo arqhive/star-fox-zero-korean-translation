@@ -111,10 +111,9 @@ work/                원본에서 뽑은 작업 파일(커밋하지 않음)
 
 ## 크레딧·라이선스
 
-- 이 저장소의 도구 코드: [MIT License](LICENSE) (© 2026 arqhive).
-- 한국어 번역문: CC BY-NC-SA 4.0.
+- 이 저장소의 도구 코드, 한국어 번역문, 문서: [MIT License](LICENSE) (© 2026 arqhive).
 - 번들 폰트(Noto Sans KR, 나눔손글씨 펜): SIL Open Font License 1.1 ([`tools/fonts/OFL.txt`](tools/fonts/OFL.txt)).
-- `tools/addrlib.py`는 [aboood40091/BFRES-Tool](https://github.com/aboood40091/BFRES-Tool)의 Wii U 텍스처 주소 계산 코드입니다(GPLv3).
+- `tools/addrlib.py`는 [aboood40091/BFRES-Tool](https://github.com/aboood40091/BFRES-Tool)의 Wii U 텍스처 주소 계산 코드로, 이 파일만 GPLv3입니다.
 
 ## 면책
 

@@ -24,9 +24,8 @@ SOFTWARE.
 
 이 저장소에 포함된 내용의 라이선스
 
-- 코드(tools/): MIT (위 내용).
+- 도구 코드, 한국어 번역문(translation/), 문서: MIT (위 내용).
   단 tools/addrlib.py 는 aboood40091/BFRES-Tool 의 코드로 GPLv3 입니다.
-- 번역문(translation/): CC BY-NC-SA 4.0
 - 번들 폰트(tools/fonts/): SIL Open Font License 1.1 — tools/fonts/OFL.txt 참고
   * Noto Sans KR (Google)
   * 나눔손글씨 펜 (NAVER)
