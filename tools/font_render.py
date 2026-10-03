@@ -13,7 +13,7 @@ STYLES = {
     2:  dict(h_ref=55,  ink=28,   wght=800, emb=0.0, outline=1.0, margin=6),
     3:  dict(h_ref=70,  ink=36.5, wght=900, emb=0.5, outline=1.0, margin=7),
     4:  dict(h_ref=127, ink=73,   wght=900, emb=1.0, outline=1.5, margin=11),
-    5:  dict(h_ref=53,  ink=29.5, wght=900, emb=0.5, outline=1.0, margin=5),
+    5:  dict(h_ref=53,  ink=29.5, wght=900, emb=0.0, outline=1.0, margin=5),
     7:  dict(h_ref=57,  ink=31,   wght=450, emb=0.0, outline=1.0, margin=6),
     8:  dict(h_ref=246, ink=144,  wght=900, emb=2.0, outline=0.0, margin=12),
     10: dict(h_ref=86,  ink=49.5, wght=900, emb=0.8, outline=1.0, margin=5),
