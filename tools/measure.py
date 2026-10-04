@@ -13,10 +13,12 @@ def widths(key, eid, candidates):
     glyph_adv = {}
     for f, c, gi in m.symbols:
         glyph_adv[(f, c)] = struct.unpack('>I9f', m.glyphs[gi])[5]
-    fonts = {}
+    import font_render
+    fonts, track = {}, {}
     for f in m.fonts:
         fid, w, h, b, hz = struct.unpack('>I4f', f)
         fonts[fid] = (w, int(round(h)))
+        track[fid] = b    # lint 와 같게: 게임은 글자마다 b 만큼 다음 글자를 당긴다
     per_font_max = collections.defaultdict(float)
     for i, msg in enumerate(m.messages):
         for j, sec in enumerate(msg['sections']):
@@ -25,7 +27,7 @@ def widths(key, eid, candidates):
                 w = 0
                 for v, q in ln['toks']:
                     if v < 0x8000:
-                        w += glyph_adv[m.symbols[v][:2]] + (q - 0x10000 if q >= 0x8000 else q)
+                        w += glyph_adv[m.symbols[v][:2]] + (q - 0x10000 if q >= 0x8000 else q) + track[font]
                     elif v == CTRL_SPACE:
                         w += fonts[font][0]
                     else:
@@ -34,6 +36,7 @@ def widths(key, eid, candidates):
     i, j = map(int, eid.split('.'))
     font = m.messages[i]['sections'][j]['c'] >> 16
     fw, fh = fonts[font]
+    fw = font_render.SPACE_W.get(font, fw)
     limit = per_font_max[font]
     print('%s %s  폰트 %d  한계 %.0fpx' % (key, eid, font, limit))
     for cand in candidates:
@@ -41,7 +44,7 @@ def widths(key, eid, candidates):
             w = 0
             for t in ln:
                 if t[0] == 'ch':
-                    w += glyph_adv.get((font, ord(t[1]))) or lintmod.new_adv(font, t[1], fh)
+                    w += (glyph_adv.get((font, ord(t[1]))) or lintmod.new_adv(font, t[1], fh)) + track[font]
                 elif t[0] == 'sp':
                     w += fw
                 else:

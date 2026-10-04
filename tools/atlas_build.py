@@ -129,6 +129,11 @@ def build(dat_dir, rows, log=print):
     tex_hash = struct.unpack('>I', m.glyphs[0][:4])[0] if m.glyphs else info['hash']
 
     used = apply_translations(m, rows, lambda f, c: b'')
+    # 한글 띄어쓰기가 보이도록 일부 폰트의 띄어쓰기 폭(메트릭 w)을 넓힌다
+    for n, rec in enumerate(m.fonts):
+        fid = struct.unpack('>I', rec[:4])[0]
+        if fid in font_render.SPACE_W:
+            m.fonts[n] = rec[:4] + struct.pack('>f', font_render.SPACE_W[fid]) + rec[8:]
     tiles, metas, new_chars = [], [], 0
     for f, c in used:
         if (f, c) in orig:

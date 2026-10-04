@@ -5,7 +5,9 @@ from PIL import Image
 from mcd_tool import MCD, CTRL_SPACE
 
 
-def render_sections(mcd_bytes, atlas, keys, scale=1.0):
+def render_sections(mcd_bytes, atlas, keys, scale=1.0, engine_spacing=True):
+    """engine_spacing: 게임처럼 글자마다 글리프 메타[3](폰트 메트릭 b, 폰트 2는 -8px 등)만큼
+    다음 글자를 당겨 찍는다. 이 값을 빼면 실제 화면보다 글자 사이가 넓게 보인다(2026-10-05 실기 확인)."""
     m = MCD(mcd_bytes)
     H, W = atlas.shape[:2]
     lines_img = []
@@ -15,25 +17,30 @@ def render_sections(mcd_bytes, atlas, keys, scale=1.0):
         fm = struct.unpack('>I4f', m.font_metrics(font))
         fh = int(round(fm[2]))
         for ln in sec['lines']:
-            parts = []
+            items, x = [], 0.0
             for v, q in ln['toks']:
+                k = q - 0x10000 if q >= 0x8000 else q
                 if v < 0x8000:
                     g = struct.unpack('>I9f', m.glyphs[m.symbols[v][2]])
                     x1, y1, x2, y2 = round(g[1] * W), round(g[2] * H), round(g[3] * W), round(g[4] * H)
-                    t = atlas[y1:y2, x1:x2]
-                    k = q - 0x10000 if q >= 0x8000 else q
-                    if k and parts:
-                        parts[-1] = parts[-1][:, :max(1, parts[-1].shape[1] + k)] if k < 0 else \
-                            np.pad(parts[-1], ((0, 0), (0, k), (0, 0)))
-                    parts.append(t)
+                    if items:
+                        x += k
+                    items.append((x, atlas[y1:y2, x1:x2]))
+                    x += g[5] + (g[8] if engine_spacing else 0)
                 elif v == CTRL_SPACE:
-                    parts.append(np.zeros((fh, int(fm[1]), 2), np.uint8))
+                    x += fm[1]
                 else:
-                    parts.append(np.full((fh, 8, 2), 90, np.uint8))  # icon / tag marker
-            if not parts:
+                    items.append((x, np.full((fh, 8, 2), 90, np.uint8)))  # icon / tag marker
+                    x += fh * 0.8
+            if not items:
                 continue
-            h = max(p.shape[0] for p in parts)
-            row = np.concatenate([np.pad(p, ((0, h - p.shape[0]), (0, 0), (0, 0))) for p in parts], 1)
+            x0 = min(0, int(np.floor(min(p for p, _ in items))))
+            w = int(np.ceil(max(p + t.shape[1] for p, t in items))) - x0
+            h = max(t.shape[0] for _, t in items)
+            row = np.zeros((h, w, 2), np.uint8)
+            for p, t in items:
+                c = int(round(p)) - x0
+                row[:t.shape[0], c:c + t.shape[1]] = np.maximum(row[:t.shape[0], c:c + t.shape[1]], t)
             lines_img.append(row)
     Wd = max(r.shape[1] for r in lines_img)
     sheet = np.concatenate([np.pad(r, ((0, 0), (0, Wd - r.shape[1]), (0, 0))) for r in lines_img], 0)

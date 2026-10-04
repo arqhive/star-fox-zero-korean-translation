@@ -21,9 +21,11 @@ adv_cache = _load_cache()
 
 
 def new_adv(font, ch, h):
-    k = '%d/%d/%04x' % (font, h, ord(ch))
+    import font_render
+    # 렌더 설정이 바뀌면 캐시가 저절로 무효가 되도록 설정값을 키에 넣는다
+    k = 'v5/%s/%s/%s/%d/%d/%04x' % (font_render.HANGUL_GAP, font_render.HANGUL_SCALE,
+                                    font_render.HANGUL_MARGIN, font, h, ord(ch))
     if k not in adv_cache:
-        import font_render
         adv_cache[k] = font_render.render_glyph(ch, font, h)[1]
     return adv_cache[k]
 
@@ -42,10 +44,12 @@ def main(names):
         glyph_adv = {}
         for f, c, gi in m.symbols:
             glyph_adv[(f, c)] = struct.unpack('>I9f', m.glyphs[gi])[5]
-        fonts = {}
+        import font_render
+        fonts, track = {}, {}
         for f in m.fonts:
             fid, w, h, b, hz = struct.unpack('>I4f', f)
             fonts[fid] = (w, int(round(h)))
+            track[fid] = b    # 게임은 글자마다 b 만큼 다음 글자를 당긴다(음수)
         # original line widths per font
         maxw = collections.defaultdict(float)
         maxlines = collections.defaultdict(int)
@@ -57,7 +61,7 @@ def main(names):
                     w = 0
                     for v, q in ln['toks']:
                         if v < 0x8000:
-                            w += glyph_adv[m.symbols[v][:2]] + (q - 0x10000 if q >= 0x8000 else q)
+                            w += glyph_adv[m.symbols[v][:2]] + (q - 0x10000 if q >= 0x8000 else q) + track[font]
                         elif v == CTRL_SPACE:
                             w += fonts[font][0]
                         else:
@@ -90,12 +94,13 @@ def main(names):
                 out.append((r['id'], '태그 오류', ko))
                 continue
             fw, fh = fonts[font]
+            fw = font_render.SPACE_W.get(font, fw)   # 한글 번역에서 바꾼 띄어쓰기 폭
             limit = per_font_max[font]
             for ln in lines:
                 w = 0
                 for t in ln:
                     if t[0] == 'ch':
-                        w += glyph_adv.get((font, ord(t[1]))) or new_adv(font, t[1], fh)
+                        w += (glyph_adv.get((font, ord(t[1]))) or new_adv(font, t[1], fh)) + track[font]
                     elif t[0] == 'sp':
                         w += fw
                     else:

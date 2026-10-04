@@ -18,7 +18,22 @@ STYLES = {
     8:  dict(h_ref=246, ink=144,  wght=900, emb=2.0, outline=0.0, margin=12),
     10: dict(h_ref=86,  ink=49.5, wght=900, emb=0.8, outline=1.0, margin=5),
 }
-HANGUL_MARGIN = 0.5
+HANGUL_MARGIN = 0.5   # 새로 그리는 가나·한자·전각 기호와 한글 칸의 여백 배율
+# 게임은 글자마다 폰트 메트릭 b 만큼 다음 글자를 당겨 찍는다(h_ref 기준 px, 각 MCD 폰트 표의 값).
+TRACK = {1: -5, 2: -8, 3: -9, 4: -11, 5: -6, 7: -6, 8: -19, 10: -1}
+# 한글 배치. 칸 폭(진행 폭)은 처음부터 쓰던 같은 폭 칸 그대로 두고, 당김이 센 폰트만 글자를 작게 그려
+# 칸 가운데에 둔다. 줄 길이가 이전 빌드와 같아서 작은 설정 상자도 그대로 들어가고, 글자가 줄어든 만큼
+# 글자 사이 틈이 생긴다(100% 에서는 폰트 2·3·5·7 이 실기에서 겹쳤음, 2026-10-05).
+# 비례폭(HANGUL_GAP)은 틈이 고르지만 줄이 길어져 작은 상자에서 넘쳤다 → None 으로 둔다.
+HANGUL_GAP = None
+HANGUL_SCALE = {1: 0.88, 2: 0.88, 3: 0.88, 5: 0.88, 7: 0.88}   # 폰트별 한글 크기 배율(없으면 1.0)
+# 한글 번역 MCD 에서 바꾸는 띄어쓰기 폭(폰트 메트릭 w). 폰트 3 은 원본이 4px 라 당김(-9)에 묻혀
+# 띄어쓰기가 사라진다(「섹터α우주」). 19 는 제목 줄이 너무 길어져서 12 로(이전 빌드보다 최대 +16px).
+SPACE_W = {3: 12.0}
+
+
+def hangul_scale(fid):
+    return HANGUL_SCALE.get(fid, 1.0) if isinstance(HANGUL_SCALE, dict) else HANGUL_SCALE
 DEFAULT_STYLE = dict(h_ref=57, ink=33, wght=700, emb=0.0, outline=1.0, margin=6)
 
 _cache = {}
@@ -94,6 +109,9 @@ def _down(a):
 def render_glyph(ch, fid, h):
     """-> (RG uint8 array [h, adv, 2], advance width)"""
     st = style_for(fid, h)
+    hangul = 0xAC00 <= ord(ch) <= 0xD7A3
+    if hangul:
+        st['ink'] *= hangul_scale(fid)
     size = _pixel_size(st)
     emb = int(round(st['emb'] * SS))
     out = int(round((st['emb'] + st['outline']) * SS))
@@ -107,22 +125,38 @@ def render_glyph(ch, fid, h):
     bb = _ink_bbox(outl)
     H = h * SS
     full = 0xAC00 <= ord(ch) <= 0xD7A3 or 0x3000 <= ord(ch) <= 0x9FFF or 0xFF00 <= ord(ch) <= 0xFFEF
-    # Japanese text relies on negative kerning; Hangul gets tighter side bearings instead (text kerning is 0)
+    # 원문 커닝은 사실상 0 이다(예전 '일본어는 음수 커닝' 가정은 틀렸음, 2026-10-05 측정)
     margin = int(round(st['margin'] * (HANGUL_MARGIN if full else 1.0) * SS))
     if bb is None:  # blank
         adv = int(round((rx1 - rx0) / SS / 2 + 2 * st['margin']))
         return np.zeros((h, adv, 2), np.uint8), adv
     x0, _, x1, _ = bb
-    if full:  # fixed full-width box, centred like the reference ideograph
-        box_w = (rx1 - rx0) + (out - emb) * 2
+    if hangul and HANGUL_GAP is not None:  # 한글 비례폭
+        h_ref = STYLES.get(fid, DEFAULT_STYLE)['h_ref']
+        side = (HANGUL_GAP * h - TRACK.get(fid, 0) * h / h_ref) / 2 * SS
+        left = x0
+        width = x1 - x0
+        adv_ss = int(np.ceil((width + 2 * side) / SS)) * SS
+        ox = int(round(left - (adv_ss - width) / 2))
+        margin = None
+    elif full:  # fixed full-width box, centred like the reference ideograph
+        if hangul and hangul_scale(fid) != 1.0:
+            # 칸 폭은 원래 크기(100%) 기준 그대로 두고 글자만 작게 그려 가운데에 둔다.
+            # 줄 길이는 이전과 같아서(작은 설정 상자도 그대로 들어감) 글자가 줄어든 만큼 틈이 생긴다.
+            st0 = style_for(fid, h)
+            r0 = _ink_bbox(_hdilate(_raw('田', _pixel_size(st0), st0['wght'], 0), emb))
+            box_w = (r0[2] - r0[0]) + (out - emb) * 2
+        else:
+            box_w = (rx1 - rx0) + (out - emb) * 2
         cx = (x0 + x1) / 2
         left = cx - box_w / 2
         width = box_w
     else:
         left = x0
         width = x1 - x0
-    adv_ss = int(np.ceil((width + 2 * margin) / SS)) * SS
-    ox = int(round(left - (adv_ss - width) / 2))
+    if margin is not None:
+        adv_ss = int(np.ceil((width + 2 * margin) / SS)) * SS
+        ox = int(round(left - (adv_ss - width) / 2))
     oy = int(round(ref_cy - H / 2 - 0.02 * H))  # originals sit ~2% below centre
     canvas_b = np.zeros((H, adv_ss), np.uint8)
     canvas_o = np.zeros((H, adv_ss), np.uint8)
