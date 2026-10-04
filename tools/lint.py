@@ -20,22 +20,12 @@ def _load_cache():
 adv_cache = _load_cache()
 
 
-def new_adv(font, ch, h, max_adv=None):
-    k = 'v2/%d/%d/%04x/%s' % (font, h, ord(ch), max_adv)   # v2: 영문·기호를 Noto 로 다시 그림
+def new_adv(font, ch, h):
+    k = '%d/%d/%04x' % (font, h, ord(ch))
     if k not in adv_cache:
         import font_render
-        adv_cache[k] = font_render.render_glyph(ch, font, h, None, max_adv)[1]
+        adv_cache[k] = font_render.render_glyph(ch, font, h)[1]
     return adv_cache[k]
-
-
-def char_adv(glyph_adv, font, ch, h):
-    """게임에 들어갈 글자의 진행 폭. atlas_build 와 같은 규칙(font_render.redraw)을 따른다."""
-    import font_render
-    orig = glyph_adv.get((font, ord(ch)))
-    if orig and not font_render.redraw(font, ch):
-        return orig            # 원본 글리프 재사용
-    cap = int(round(orig)) if orig and not ch.isdigit() else None   # 숫자는 상한 없음
-    return new_adv(font, ch, h, cap)
 
 
 def main(names):
@@ -105,7 +95,7 @@ def main(names):
                 w = 0
                 for t in ln:
                     if t[0] == 'ch':
-                        w += char_adv(glyph_adv, font, t[1], fh)
+                        w += glyph_adv.get((font, ord(t[1]))) or new_adv(font, t[1], fh)
                     elif t[0] == 'sp':
                         w += fw
                     else:

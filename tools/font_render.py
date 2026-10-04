@@ -21,14 +21,6 @@ STYLES = {
 HANGUL_MARGIN = 0.5
 DEFAULT_STYLE = dict(h_ref=57, ink=33, wght=700, emb=0.0, outline=1.0, margin=6)
 
-
-def redraw(fid, ch):
-    """원본 글리프를 재사용하지 않고 Noto 로 다시 그릴 글자인가.
-    한글이 쓰이는 폰트(STYLES)에서는 가나·한자를 뺀 모든 글자(영문·숫자·기호·그리스 문자 등)를
-    한글과 같은 글꼴로 맞춘다. 한글이 없는 폰트(크레디트·저작권 표기 등)는 원본 그대로 둔다."""
-    o = ord(ch)
-    return fid in STYLES and not (0x3040 <= o <= 0x30FF or 0x4E00 <= o <= 0x9FFF)
-
 _cache = {}
 
 
@@ -99,10 +91,8 @@ def _down(a):
     return a.reshape(h // SS, SS, w // SS, SS).mean((1, 3))
 
 
-def render_glyph(ch, fid, h, fixed_adv=None, max_adv=None):
-    """-> (RG uint8 array [h, adv, 2], advance width)
-    fixed_adv: 진행 폭을 이 값(px)으로 고정하고 글자를 가운데 둔다(숫자를 원본처럼 고정폭으로).
-    max_adv: 진행 폭이 이 값(px, 원본 글리프 폭)을 넘지 않게 한다(줄 길이가 원본보다 늘지 않게)."""
+def render_glyph(ch, fid, h):
+    """-> (RG uint8 array [h, adv, 2], advance width)"""
     st = style_for(fid, h)
     size = _pixel_size(st)
     emb = int(round(st['emb'] * SS))
@@ -116,8 +106,7 @@ def render_glyph(ch, fid, h, fixed_adv=None, max_adv=None):
     ref_cy = (ry0 + ry1) / 2
     bb = _ink_bbox(outl)
     H = h * SS
-    # 한글·가나·한자만 전각 칸. CJK 구두점(「」、。 등)은 영문처럼 잉크 기준 폭으로 둔다
-    full = 0xAC00 <= ord(ch) <= 0xD7A3 or 0x3040 <= ord(ch) <= 0x9FFF
+    full = 0xAC00 <= ord(ch) <= 0xD7A3 or 0x3000 <= ord(ch) <= 0x9FFF or 0xFF00 <= ord(ch) <= 0xFFEF
     # Japanese text relies on negative kerning; Hangul gets tighter side bearings instead (text kerning is 0)
     margin = int(round(st['margin'] * (HANGUL_MARGIN if full else 1.0) * SS))
     if bb is None:  # blank
@@ -129,28 +118,11 @@ def render_glyph(ch, fid, h, fixed_adv=None, max_adv=None):
         cx = (x0 + x1) / 2
         left = cx - box_w / 2
         width = box_w
-        adv_ss = int(np.ceil((width + 2 * margin) / SS)) * SS
-        ox = int(round(left - (adv_ss - width) / 2))
     else:
-        # 영문·숫자·기호: 글꼴에 설계된 진행 폭(좌우 여백 포함)에 외곽선 두께만 더한다
-        f = _font(size, st['wght'])
-        nat = f.getlength(ch)
-        ink = x1 - x0
-        natural = nat + 2 * out
-        want = natural
-        if fixed_adv:
-            want = fixed_adv * SS
-        elif max_adv:
-            want = min(want, max_adv * SS)
-        want = max(want, ink)
-        adv_ss = int(np.ceil(want / SS)) * SS
-        if want >= natural:
-            # 글꼴 원점을 칸 가운데에: 외곽선 래스터 왼쪽 끝 x0 는 글꼴 bbox 왼쪽 - out 에 해당
-            pen = (adv_ss - nat) / 2
-            ox = int(round(x0 - (pen + f.getbbox(ch)[0] - out)))
-        else:
-            # 원본 폭으로 줄였을 때는 잉크를 가운데에
-            ox = int(round(x0 - (adv_ss - ink) / 2))
+        left = x0
+        width = x1 - x0
+    adv_ss = int(np.ceil((width + 2 * margin) / SS)) * SS
+    ox = int(round(left - (adv_ss - width) / 2))
     oy = int(round(ref_cy - H / 2 - 0.02 * H))  # originals sit ~2% below centre
     canvas_b = np.zeros((H, adv_ss), np.uint8)
     canvas_o = np.zeros((H, adv_ss), np.uint8)
