@@ -66,7 +66,8 @@ def main(names):
                             w += fonts[font][0]
                         else:
                             w += fonts[font][1] * 0.8  # icon guess
-                    maxw[(font, i, j)] = w
+                    # 섹션의 가장 긴 줄 (예전엔 마지막 줄 폭만 남아 한계가 실제보다 좁게 잡혔음, 2026-10-05)
+                    maxw[(font, i, j)] = max(maxw.get((font, i, j), 0), w)
         per_font_max = collections.defaultdict(float)
         for (font, i, j), w in maxw.items():
             per_font_max[font] = max(per_font_max[font], w)
