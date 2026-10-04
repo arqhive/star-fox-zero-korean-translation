@@ -131,14 +131,18 @@ def build(dat_dir, rows, log=print):
     used = apply_translations(m, rows, lambda f, c: b'')
     tiles, metas, new_chars = [], [], 0
     for f, c in used:
-        if (f, c) in orig:
+        if (f, c) in orig and not font_render.redraw(f, chr(c)):
             px, g = orig[(f, c)]
             tiles.append(px)
             metas.append(g[5:])
         else:
             fm = struct.unpack('>I4f', m.font_metrics(f))
             fh = int(round(fm[2]))
-            px, adv = font_render.render_glyph(chr(c), f, fh)
+            # 다시 그린 글자는 원본 폭을 넘지 않게 해서 줄 길이가 원본보다 늘지 않게 한다.
+            # 숫자는 예외: 본고딕 숫자는 0~9 폭이 같으므로 상한 없이 기본 폭을 써야 고정폭이 유지된다
+            # (점수·시간 표시의 자리가 흔들리지 않음)
+            cap = int(round(orig[(f, c)][1][5])) if (f, c) in orig and not chr(c).isdigit() else None
+            px, adv = font_render.render_glyph(chr(c), f, fh, None, cap)
             tiles.append(px)
             metas.append((float(adv), float(fh), 0.0, fm[3], fm[4]))
             new_chars += 1

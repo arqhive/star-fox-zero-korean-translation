@@ -41,7 +41,7 @@ def widths(key, eid, candidates):
             w = 0
             for t in ln:
                 if t[0] == 'ch':
-                    w += glyph_adv.get((font, ord(t[1]))) or lintmod.new_adv(font, t[1], fh)
+                    w += lintmod.char_adv(glyph_adv, font, t[1], fh)
                 elif t[0] == 'sp':
                     w += fw
                 else:
