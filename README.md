@@ -3,7 +3,7 @@
 *Star Fox Zero* (Wii U, 일본판 `00050000101AFF00`) 비공식 한국어 팬 패치입니다.
 대사는 일본어판 원문을 기준으로 번역했습니다.
 
-**제작: arqhive** · **최신 버전: [v1.1](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.1)**
+**제작: arqhive** · **최신 버전: [v1.2f 최종판](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2f)**
 
 - 게임 안의 텍스트 전체를 한글화했습니다(대사 2,000여 개, HUD, 타이틀·일시정지 메뉴, 브리핑, 트레이닝, 엔딩).
 - 타이틀 로고의 「スターフォックス ゼロ」와 엔딩 청구서 이미지도 한글로 바꿨습니다.
@@ -22,7 +22,7 @@
 
 ### 적용 방법
 
-1. [배포 페이지](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.1)에서 `StarFoxZero_KO_v1.1.zip`을 받아 압축을 풉니다.
+1. [배포 페이지](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2f)에서 `StarFoxZero_KO_v1.2f.zip`을 받아 압축을 풉니다.
 2. 원본 `data003.cpk`를 `패치하기.bat` 옆에 두고 `패치하기.bat`를 실행합니다. 30초에서 2분 정도 지나면 `out\data003.cpk`가 만들어집니다.
 3. 패처가 원본과 결과 파일의 MD5를 자동으로 검사합니다. 직접 확인하려면 결과 파일의 확인값을 아래 표와 비교합니다.
 4. 만들어진 파일을 아래 위치에 넣습니다. 원본 게임 폴더는 고치지 않습니다.
@@ -35,12 +35,12 @@
 
 ### 파일 확인값
 
-| 항목 | 원본 일본판 `data003.cpk` | 패치 적용 결과 (v1.1) |
+| 항목 | 원본 일본판 `data003.cpk` | 패치 적용 결과 (v1.2f) |
 |---|---|---|
 | 크기 | 815,910,328 바이트 | 890,469,816 바이트 |
-| CRC32 | `1DF78828` | `33F67B69` |
-| MD5 | `7450ce09efac2f405f0a36fe784d44a1` | `8e5ec4d4e4abe41dbb2a16aa456bbe6c` |
-| SHA-1 | `9dfa60ddbb9b0e1ebcc313eae6ca081244c312b1` | `5c6f88d641b52ebded3d3fd2a56d28eed03d4413` |
+| CRC32 | `1DF78828` | `C7B6AF3A` |
+| MD5 | `7450ce09efac2f405f0a36fe784d44a1` | `321e40d37846c49d7b34cc3ac4007883` |
+| SHA-1 | `9dfa60ddbb9b0e1ebcc313eae6ca081244c312b1` | `cb3ed999e116e305ed7911b8fd150294f7bd3c94` |
 
 원본 파일명 예: `content/data003.cpk`
 
@@ -74,7 +74,7 @@ python tools/patch.py <원본 data003.cpk> -o out
 
 ```bash
 python tools/patch.py <원본 data003.cpk> -o out
-python tools/make_release.py <원본 data003.cpk> --version v1.1
+python tools/make_release.py <원본 data003.cpk> --version v1.2f
 ```
 
 `make_release.py`는 원본과 빌드 결과를 비교해 바뀐 파일만 `release/patcher/payload`에 담고 ZIP을 만듭니다. 글자 아틀라스와 MCD는 통째로, 그림 텍스처는 달라진 4KB 블록만 담습니다.
