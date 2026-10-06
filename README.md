@@ -22,7 +22,7 @@
 
 ### 적용 방법
 
-1. [배포 페이지](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2f)에서 `StarFoxZero_KO_v1.2f.zip`을 받아 압축을 풉니다.
+1. [배포 페이지](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2f)에서 `AFXJ_KPatch_v1.2f.zip`을 받아 압축을 풉니다.
 2. 원본 `data003.cpk`를 `패치하기.bat` 옆에 두고 `패치하기.bat`를 실행합니다. 30초에서 2분 정도 지나면 `out\data003.cpk`가 만들어집니다.
 3. 패처가 원본과 결과 파일의 MD5를 자동으로 검사합니다. 직접 확인하려면 결과 파일의 확인값을 아래 표와 비교합니다.
 4. 만들어진 파일을 아래 위치에 넣습니다. 원본 게임 폴더는 고치지 않습니다.
