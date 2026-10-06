@@ -19,6 +19,7 @@ EMB = 0.25        # extra emboldening (px)
 XSCALE = 1.15     # the original katakana is wide and squat
 GAP_RATIO = 0.48  # gap between syllables relative to syllable width
 SPACE_RATIO = 0.9 # extra width of the word space
+LIFT = {'스': 2, '로': 2}  # px raised from the bottom line (glyphs ending on a flat ㅡ stroke), 2px by eye
 
 
 def _font(size):
@@ -78,18 +79,20 @@ def paint(rgba):
         placements = []
         for g, w, ch in zip(glyphs, widths, TEXT):
             if g is not None:
-                placements.append((round(x), g))
+                placements.append((round(x), g, LIFT.get(ch, 0) * SS))
                 x += w + gap
             else:
                 x += avg * SPACE_RATIO
-        total = max(xi + g.shape[1] for xi, g in placements)
+        total = max(xi + g.shape[1] for xi, g, _ in placements)
         if total > (sx1 - sx0) * SS:
             raise ValueError('Title lettering exceeds its texture region')
         canvas = np.zeros((ink_h * SS, (sx1 - sx0) * SS), np.float32)
         offset = round((canvas.shape[1] - total) / 2)
-        for xi, g in placements:
+        for xi, g, lift in placements:
             h, w = g.shape
-            canvas[:h, offset + xi:offset + xi + w] = g
+            # bottom-align like the original katakana, then raise by LIFT
+            bot = canvas.shape[0] - lift
+            canvas[bot - h:bot, offset + xi:offset + xi + w] = g
         alpha = _down(canvas)
         ah, aw = alpha.shape
         dst = out[y0:y0 + ah, sx0:sx0 + aw]
