@@ -3,7 +3,7 @@
 *Star Fox Zero* (Wii U, 일본판 `00050000101AFF00`) 비공식 한국어 팬 패치입니다.
 대사는 일본어판 원문을 기준으로 번역했습니다.
 
-**제작: arqhive** · **최신 버전: [v1.2.1f 최종판](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2.1f)**
+**제작: arqhive** · **최신 버전: [v1.2.1f 완성판](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2.1f)**
 
 - 게임 안의 텍스트 전체를 한글화했습니다(대사 2,000여 개, HUD, 타이틀·일시정지 메뉴, 브리핑, 트레이닝, 엔딩).
 - 타이틀 로고의 「スターフォックス ゼロ」와 엔딩 청구서 이미지도 한글로 바꿨습니다.
