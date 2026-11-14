@@ -5,6 +5,8 @@
 
 **제작: arqhive** · **최신 버전: [v1.2.1f 완성판](https://github.com/arqhive/star-fox-zero-korean-translation/releases/tag/v1.2.1f)**
 
+**소개 페이지: [arqhive 한글 패치 아카이브](https://arqhive.vercel.app/korean-translation/star-fox-zero)**
+
 - 게임 안의 텍스트 전체를 한글화했습니다(대사 2,000여 개, HUD, 타이틀·일시정지 메뉴, 브리핑, 트레이닝, 엔딩).
 - 타이틀 로고의 「スターフォックス ゼロ」와 엔딩 청구서 이미지도 한글로 바꿨습니다.
 - 폰트는 원본과 같은 방식(파일별 사전 렌더 글리프 아틀라스)으로 새로 그려 넣습니다.
